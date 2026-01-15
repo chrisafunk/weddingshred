@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>WeddingShred</title>
+    <title>Shredding for the Wedding</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <%= csrf_meta_tags %><%= csp_meta_tag %>
 
+    <!-- Core Plugins -->
+    <%= javascript_include_tag "plugins/jquery/jquery.min" %>
+    <%= stylesheet_link_tag "plugins/bootstrap/bootstrap.min" %>
+    <%= stylesheet_link_tag "plugins/flaticon/flaticon" %>
+    <%= stylesheet_link_tag "plugins/themify-icons/css/themify-icons" %>
+    <%= stylesheet_link_tag "plugins/fontawesome/css/all.min" %>
+    <%= stylesheet_link_tag "plugins/material-design-iconic-font/css/materialdesignicons.min" %>
+    <%= stylesheet_link_tag "plugins/line-awesome/css/line-awesome.min" %>
+    <%= stylesheet_link_tag "plugins/animate/animate.min" %>
+    <%= stylesheet_link_tag "plugins/metismenu/metisMenu.min" %>
 
     <!-- Core CSS -->
-    <%= stylesheet_link_tag "gymove/plugins/bootstrap/bootstrap.min" %>
-    <%= stylesheet_link_tag "gymove/style" %>
-    <%= stylesheet_link_tag "weddingshred" %>
+    <%= stylesheet_link_tag "style" %>
+    <%= favicon_link_tag 'favicon.png' %>
+
 
     <%= yield :page_styles %>
 
     <!-- Importmap (Turbo/Stimulus) -->
     <%= javascript_importmap_tags %>
   </head>
-  <body class="dz-theme">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body class="h-100">
+  <% unless controller_name == "sessions" && action_name == "new" %>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        WeddingShred
+        Shredding for the Wedding
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,19 +60,27 @@
         </div>
       </div>
     </nav>
+  <% end %>
 
-    <div class="content-body container-fluid pt-4">
+
+
       <%= yield %>
-    </div>
 
 
 
-    <!-- Core JS -->
-    <%= javascript_include_tag "gymove/plugins/bootstrap/bootstrap.bundle.min" %>
-    <%= javascript_include_tag "gymove/settings" %>
-    <%= javascript_include_tag "gymove/deznav-init" %>
-    <%= javascript_include_tag "gymove/custom.min" %>
+  <!-- Plugin JS -->
+  <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
+  <%= javascript_include_tag "plugins/bootstrap-select/bootstrap-select.min" %>
+  <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
+  <%= javascript_include_tag "plugins/fontawesome/js/all.min" %>
+  <%= javascript_include_tag "plugins/owl-carousel/owl.carousel" %>
 
-    <%= yield :page_scripts %>
+  <!-- Core JS -->
+  <%= javascript_include_tag "settings" %>
+  <%= javascript_include_tag "deznav-init" %>
+  <%= javascript_include_tag "custom.min" %>
+
+
+  <%= yield :page_scripts %>
   </body>
 </html>

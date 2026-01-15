@@ -1,0 +1,51 @@
+
+<!-- app/views/dashboard/index.html.erb -->
+
+
+
+<section class="section">
+  <div class="row">
+    <div class="col-lg-8 mb-4">
+      <div class="card p-4">
+        <% if @month_plan %>
+          <h3 class="mb-3"><%= @month_plan.title %></h3>
+          <% total_days = (@month_plan.start_date..@month_plan.end_date).count %>
+          <% days_logged = current_user.workout_entries.where(month_plan_id: @month_plan.id).distinct.count(:performed_on) %>
+          <% pct = (days_logged.to_f / total_days * 100).round %>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between">
+              <span class="text-muted">Consistency</span>
+              <span class="text-muted"><%= days_logged %> / <%= total_days %> days (<%= pct %>%)</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: <%= pct %>%"></div>
+            </div>
+          </div>
+
+          <%= link_to "Log Today’s Workout", new_workout_entry_path(month_plan_id: @month_plan.id),
+                      class: "btn btn-primary" %>
+        <% else %>
+          <p class="text-muted">No current plan. Ask an admin to create one.</p>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="card p-4">
+        <h5>Today</h5>
+        <ul class="list-group list-group-flush">
+          <% @today_entries.each do |e| %>
+            <li class="list-group-item">
+              <strong><%= e.exercise.name %></strong> —
+              <%= [("sets: #{e.sets}" if e.sets), ("reps: #{e.reps}" if e.reps),
+                   ("wt: #{e.weight}" if e.weight), ("min: #{e.duration_minutes}" if e.duration_minutes),
+                   ("km: #{e.distance_km}" if e.distance_km)].compact.join(", ") %>
+            </li>
+          <% end %>
+        </ul>
+        <%= link_to "Leaderboard", leaderboard_path, class: "btn btn-outline-secondary mt-3" %>
+      </div>
+    </div>
+  </div>
+</section>
