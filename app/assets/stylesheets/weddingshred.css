@@ -1,0 +1,14 @@
+/* WeddingShred brand overrides (loaded after Gymove) */
+.btn-primary {
+  background-color: #6b46c1;
+  border-color: #6b46c1;
+}
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: .04em;
+}
+
+/* Optional page padding if you're using a fixed/sticky header */
+.content-body {
+  padding-top: 1rem;
+}
