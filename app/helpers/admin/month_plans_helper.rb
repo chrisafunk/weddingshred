@@ -1,0 +1,2 @@
+module Admin::MonthPlansHelper
+end

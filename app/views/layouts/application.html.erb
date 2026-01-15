@@ -1,0 +1,41 @@
+
+<!-- app/views/layouts/application.html.erb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wedding-Shred</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %><%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag "plugins/bootstrap/css/bootstrap.min", media: "all" %>
+
+  <%= stylesheet_link_tag "css/style", "data-turbo-track": "reload" %>
+
+  <%= javascript_importmap_tags %>
+</head>
+<body>
+<%= render "shared/gymfit_header" %>
+
+<!-- Flash -->
+<div class="container mt-5 pt-5">
+  <% flash.each do |type, msg| %>
+    <div class="alert <%= type.to_s == 'alert' ? 'alert-danger' : 'alert-success' %> alert-dismissible fade show" role="alert">
+      <%= msg %>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  <% end %>
+</div>
+
+<main class="container my-5">
+  <%= yield %>
+</main>
+
+<%= render "shared/gymfit_footer" %>
+
+<%= javascript_include_tag "plugins/jquery/jquery", "data-turbo-track": "reload" %>
+<%= javascript_include_tag "plugins/bootstrap/js/bootstrap.min", "data-turbo-track": "reload" %>
+<%= javascript_include_tag "js/script", "data-turbo-track": "reload" %>
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+<!-- app/views/shared/_gymfit_header.html.erb -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+
+      <h2 class="logo-text text-uppercase">Wedding-Shred</h2>
+
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+              data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navbarsExample09">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><%= link_to "Dashboard", root_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to "Leaderboard", leaderboard_path, class: "nav-link" %></li>
+          <li class="nav-item"><%= link_to "Log Workout", new_workout_entry_path, class: "nav-link" %></li>
+          <% if current_user&.admin? %>
+            <li class="nav-item"><%= link_to "Admin", admin_month_plans_path, class: "nav-link" %></li>
+          <% end %>
+          <% if user_signed_in? %>
+            <li class="nav-item"><span class="nav-link">Hi, <%= current_user.try(:name) || current_user.email %></span></li>
+            <li class="nav-item"><%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %></li>
+          <% else %>
+            <li class="nav-item"><%= link_to "Sign in", new_user_session_path, class: "nav-link" %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

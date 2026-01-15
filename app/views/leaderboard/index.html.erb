@@ -1,0 +1,28 @@
+
+<!-- app/views/leaderboard/index.html.erb (top) -->
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <%= link_to "Monthly", leaderboard_path(view: "monthly", month_plan_id: @month_plan&.id),
+                class: "nav-link #{ @view == 'monthly' ? 'active' : '' }" %>
+  </li>
+  <li class="nav-item">
+    <%= link_to "All‑Time", leaderboard_path(view: "all_time"),
+                class: "nav-link #{ @view == 'all_time' ? 'active' : '' }" %>
+  </li>
+</ul>
+
+<% if @view == "monthly" %>
+  <div class="mt-3">
+    <%= form_with url: leaderboard_path, method: :get, class: "form-inline" do %>
+      <%= hidden_field_tag :view, "monthly" %>
+      <%= select_tag :month_plan_id,
+                     options_from_collection_for_select(@month_plans, :id, :title, @month_plan&.id),
+                     prompt: "Choose month",
+                     class: "form-control mr-2" %>
+      <%= submit_tag "Go", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+  <%= render partial: "table_monthly", locals: { rows: @rows, total_days: @total_days } %>
+<% else %>
+  <%= render partial: "table_all_time", locals: { rows: @rows } %>
+<% end %>

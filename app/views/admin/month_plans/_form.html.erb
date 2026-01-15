@@ -1,0 +1,32 @@
+
+<%= form_with model: [:admin, @month_plan] do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :start_date %>
+    <%= f.date_field :start_date %>
+  </div>
+
+  <div>
+    <%= f.label :end_date %>
+    <%= f.date_field :end_date %>
+  </div>
+
+  <h3>Exercises in this month</h3>
+  <div id="plan-exercises">
+    <%= f.fields_for :plan_exercises do |pe| %>
+      <div class="plan-exercise-row">
+        <%= pe.collection_select :exercise_id, Exercise.order(:name), :id, :name, include_blank: true %>
+        <%= pe.number_field :target_sets, placeholder: "sets" %>
+        <%= pe.number_field :target_reps, placeholder: "reps" %>
+        <%= pe.number_field :target_weight, step: 0.5, placeholder: "weight" %>
+        <%= pe.check_box :_destroy %> Remove
+      </div>
+    <% end %>
+  </div>
+
+  <%= f.submit %>
+<% end %>
