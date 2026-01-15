@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Remove all old themes">
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="add the new theme 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add-gymove-into-layout.patch" beforeDir="false" afterPath="$PROJECT_DIR$/add-gymove-into-layout.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tasks/gymove.rake" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tasks/gymove.rake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768350364131</updated>
       <workItem from="1768350365230" duration="17053000" />
-      <workItem from="1768441515782" duration="3131000" />
+      <workItem from="1768441515782" duration="5342000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -109,7 +109,23 @@
       <option name="project" value="LOCAL" />
       <updated>1768442855169</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add the new theme">
+      <option name="closed" value="true" />
+      <created>1768444841605</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768444841605</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add the new theme 2">
+      <option name="closed" value="true" />
+      <created>1768445032789</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1768445032789</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,7 +133,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove all old themes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove all old themes" />
+    <MESSAGE value="add the new theme" />
+    <MESSAGE value="add the new theme 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the new theme 2" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
