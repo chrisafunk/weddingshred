@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   end
 
 
-
+  get "ui/smoke", to: "ui#smoke"
 
 
   resources :workout_entries

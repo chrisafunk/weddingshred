@@ -4,9 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="add the new theme 2">
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="moved the theme">
+      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/gymove/plugins/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/ui_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/assets_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/ui/smoke.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tasks/gymove.rake" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tasks/gymove.rake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/chunk-CT46QCH7.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/chunk-GFBUASX3.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/chunk-HTB5LLOP.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/colors-b_6i0Oi7.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/colors.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/colors.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/colors.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/default-theme.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/default-theme.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/default-theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/default-theme.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/flatten-color-palette.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/flatten-color-palette.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/flatten-color-palette.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/flatten-color-palette.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/lib.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/lib.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/lib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/lib.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/plugin.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/plugin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/plugin.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/resolve-config-BIFUA2FY.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/resolve-config-QUZ9b-Gn.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/dist/types-CJYAW1ql.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/preflight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tailwindcss/utilities.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +87,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1768441574656",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/wip/weddingshred/app/assets/javascripts/gymove/plugins",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +104,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wip\weddingshred\app\assets\javascripts\gymove\plugins" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wip\weddingshred\vendor\gymove_src" />
     </key>
@@ -99,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1768350364131</updated>
       <workItem from="1768350365230" duration="17053000" />
-      <workItem from="1768441515782" duration="5342000" />
+      <workItem from="1768441515782" duration="7613000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -125,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768445032789</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="moved the theme">
+      <option name="closed" value="true" />
+      <created>1768447181841</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768447181841</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +189,8 @@
     <MESSAGE value="Remove all old themes" />
     <MESSAGE value="add the new theme" />
     <MESSAGE value="add the new theme 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the new theme 2" />
+    <MESSAGE value="moved the theme" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved the theme" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

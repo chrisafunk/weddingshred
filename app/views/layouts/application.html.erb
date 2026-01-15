@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <%= csrf_meta_tags %><%= csp_meta_tag %>
 
-    <!-- Gymove / Bootstrap CSS (installed by: bin/rails gymove:install) -->
-    <%= stylesheet_link_tag "gymove/bootstrap.min", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "gymove/style",         "data-turbo-track": "reload" %>
 
-    <!-- App overrides -->
-    <%= stylesheet_link_tag "weddingshred", "data-turbo-track": "reload" %>
+    <!-- Core CSS -->
+    <%= stylesheet_link_tag "gymove/plugins/bootstrap/bootstrap.min" %>
+    <%= stylesheet_link_tag "gymove/style" %>
+    <%= stylesheet_link_tag "weddingshred" %>
+
+    <%= yield :page_styles %>
 
     <!-- Importmap (Turbo/Stimulus) -->
     <%= javascript_importmap_tags %>
@@ -18,7 +19,7 @@
   <body class="dz-theme">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <%= (defined?(root_path) ? root_path : ">WeddingShred</a>
+        WeddingShred
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -53,9 +54,14 @@
       <%= yield %>
     </div>
 
-    <!-- Gymove / Bootstrap JS (installed by: bin/rails gymove:install) -->
-    <%= javascript_include_tag "gymove/jquery.min",           "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "gymove/bootstrap.bundle.min", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "gymove/main",                 "data-turbo-track": "reload" %>
+
+
+    <!-- Core JS -->
+    <%= javascript_include_tag "gymove/plugins/bootstrap/bootstrap.bundle.min" %>
+    <%= javascript_include_tag "gymove/settings" %>
+    <%= javascript_include_tag "gymove/deznav-init" %>
+    <%= javascript_include_tag "gymove/custom.min" %>
+
+    <%= yield :page_scripts %>
   </body>
 </html>

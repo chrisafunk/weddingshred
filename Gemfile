@@ -49,6 +49,12 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  group :development do
+    gem 'rack-mini-profiler'
+  end
+
+
 end
 
 group :development do
