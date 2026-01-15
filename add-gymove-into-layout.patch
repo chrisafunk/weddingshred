@@ -1,0 +1,88 @@
+
+diff --git a/app/assets/stylesheets/weddingshred.css b/app/assets/stylesheets/weddingshred.css
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/app/assets/stylesheets/weddingshred.css
+@@ -0,0 +1,24 @@
++/* WeddingShred brand overrides (loaded after Gymove) */
++.btn-primary {
++  background-color: #6b46c1;
++  border-color: #6b46c1;
++}
++.navbar-brand {
++  font-weight: 600;
++  letter-spacing: .04em;
++}
++.content-body {
++  padding-top: 1rem;
++}
+diff --git a/app/views/layouts/application.html.erb b/app/views/layouts/application.html.erb
+index 0000000..2222222 100644
+--- a/app/views/layouts/application.html.erb
++++ b/app/views/layouts/application.html.erb
+@@ -1,17 +1,52 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-  <head>
+-    <title>WeddingShred</title>
+-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+-    <%= csrf_meta_tags %><%= csp_meta_tag %>
+-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+-    <%= javascript_importmap_tags %>
+-  </head>
+-  <body>
+-    <%= yield %>
+-  </body>
+-</html>
++<!DOCTYPE html>
++<html lang="en">
++  <head>
++    <title>WeddingShred</title>
++    <meta name="viewport" content="width=device-width, initial-scale=1" />
++    <%= csrf_meta_tags %><%= csp_meta_tag %>
++
++    <!-- Gymove / Bootstrap CSS -->
++    <!-- These files are installed by: bin/rails gymove:install -->
++    <%= stylesheet_link_tag "gymove/bootstrap.min", "data-turbo-track": "reload" %>
++    <%= stylesheet_link_tag "gymove/style",         "data-turbo-track": "reload" %>
++
++    <!-- App overrides -->
++    <%= stylesheet_link_tag "weddingshred", "data-turbo-track": "reload" %>
++    <%= javascript_importmap_tags %>
++  </head>
++  <body class="dz-theme">
++    <nav class="navbar navbar-expand-lg navbar-light bg-light">
++      <div class="container">
++        <%= root_path rescue ">WeddingShred</a>
++        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
++          <span class="navbar-toggler-icon"></span>
++        </button>
++        <div class="collapse navbar-collapse" id="mainNav">
++          <ul class="navbar-nav ms-auto">
++            <% if defined?(root_path) %>
++              <li class="nav-item"><%= link_to "Dashboard", root_path, class: "nav-link" %></li>
++            <% end %>
++            <% if defined?(leaderboard_path) %>
++              <li class="nav-item"><%= link_to "Leaderboard", leaderboard_path, class: "nav-link" %></li>
++            <% end %>
++            <% if respond_to?(:user_signed_in?) && user_signed_in? %>
++              <li class="nav-item"><%= link_to "Sign out", destroy_user_session_path, data: { "turbo-method": :delete }, class: "nav-link" %></li>
++            <% else %>
++              <li class="nav-item"><%= link_to "Sign in", (defined?(new_user_session_path) ? new_user_session_path : "#"), class: "nav-link" %></li>
++            <% end %>
++          </ul>
++        </div>
++      </div>
++    </nav>
++
++    <div class="content-body container-fluid pt-4">
++      <%= yield %>
++    </div>
++
++    <!-- Gymove / Bootstrap JS (installed by gymove:install) -->
++    <%= javascript_include_tag "gymove/jquery.min",           "data-turbo-track": "reload" %>
++    <%= javascript_include_tag "gymove/bootstrap.bundle.min", "data-turbo-track": "reload" %>
++    <%= javascript_include_tag "gymove/main",                 "data-turbo-track": "reload" %>
++  </body>
++</html>

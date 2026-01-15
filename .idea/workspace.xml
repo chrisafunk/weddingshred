@@ -4,260 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/weddingshred.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weddingshred.iml" afterDir="false" />
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Remove all old themes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/about/img-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/about/img-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/about/img-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/about/img-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/about/img-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/about/img-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/bg/bg-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/bg/bg-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/bg/bg-cta.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/bg/bg-image-2-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/bg/slide2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/blog-post-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/blog-post-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/gym-single.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/post-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/post-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/post1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/post2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/post3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/post4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/post5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/blog/post6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/course-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/course-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/course-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/gallery-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/gallery-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/gallery-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/gallery-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/gallery-05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/gallery-06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/gallery-07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/gallery/gallery-08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/marker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/services/service-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/services/service-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/services/service-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/services/service-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/services/service-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/services/service-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/team/team-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/team/team-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/team/team-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/gymfit/team/team-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/gymfit/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/gymfit/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/gymfit/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/javascript/.keep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/css/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/about/img-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/about/img-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/about/img-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/about/img-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/about/img-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/about/img-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/bg/bg-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/bg/bg-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/bg/bg-cta.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/bg/bg-image-2-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/bg/slide2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/blog-post-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/blog-post-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/gym-single.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/post-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/post-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/post1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/post2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/post3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/post4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/post5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/blog/post6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/course-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/course-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/course-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/gallery-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/gallery-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/gallery-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/gallery-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/gallery-05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/gallery-06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/gallery-07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/gallery/gallery-08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/marker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/services/service-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/services/service-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/services/service-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/services/service-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/services/service-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/services/service-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/team/team-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/team/team-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/team/team-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/images/team/team-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/animate-css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/css/all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-brands-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-brands-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-brands-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-brands-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-brands-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-regular-400.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-regular-400.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-regular-400.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-regular-400.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-regular-400.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-solid-900.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-solid-900.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-solid-900.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-solid-900.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/fontawesome/webfonts/fa-solid-900.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/google-map/gmap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/icofont/fonts/icofont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/icofont/fonts/icofont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/icofont/fonts/icofont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/icofont/fonts/icofont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/icofont/fonts/icofont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/icofont/icofont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/icofont/icofont.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/external/sizzle/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax/jsonp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax/load.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax/parseXML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax/var/location.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax/var/nonce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax/var/rquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/ajax/xhr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/attributes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/attributes/attr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/attributes/classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/attributes/prop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/attributes/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/attributes/val.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/callbacks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/DOMEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/access.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/nodeName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/parseHTML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/ready-no-deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/ready.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/readyException.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/stripAndCollapse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/addGetHookIf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/adjustCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/curCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/showHide.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/var/cssExpand.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/var/getStyles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/var/isHiddenWithinTree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/var/rmargin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/css/var/swap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/data/Data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/data/var/acceptData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/data/var/dataPriv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/data/var/dataUser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/deferred/exceptionHook.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/deprecated.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/effects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/effects/Tween.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/effects/animatedSelector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/event/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/event/alias.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/event/focusin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/event/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/event/trigger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/exports/amd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/exports/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/buildFragment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/getAll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/var/rtagName.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/manipulation/wrapMap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/offset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/queue/delay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/selector-native.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/selector-sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/serialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/traversing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/traversing/findFilter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/traversing/var/dir.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/traversing/var/siblings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/ObjectFunctionString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/arr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/class2type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/concat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/document.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/documentElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/fnToString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/getProto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/hasOwn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/indexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/pnum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/push.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/rcssNum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/rnothtmlwhite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/var/toString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/jquery/src/wrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/magnific-popup/dist/jquery.magnific-popup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/magnific-popup/dist/jquery.magnific-popup.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/magnific-popup/dist/magnific-popup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/config.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/fonts/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/fonts/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/fonts/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/fonts/slick.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/slick-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/slick-theme.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/slick-theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/slick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/slick.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/slick.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/slick-carousel/slick/slick.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/themify/css/themify-icons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/themify/fonts/themify.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/themify/fonts/themify.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/themify/fonts/themify.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/theme/gymfit/plugins/themify/fonts/themify.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/add-gymove-into-layout.patch" beforeDir="false" afterPath="$PROJECT_DIR$/add-gymove-into-layout.patch" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -311,6 +60,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wip\weddingshred\vendor\gymove_src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="RackRunConfigurationType" factoryName="Rack">
       <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -345,12 +99,25 @@
       <option name="presentableId" value="Default" />
       <updated>1768350364131</updated>
       <workItem from="1768350365230" duration="17053000" />
-      <workItem from="1768441515782" duration="1174000" />
+      <workItem from="1768441515782" duration="3131000" />
     </task>
+    <task id="LOCAL-00001" summary="Remove all old themes">
+      <option name="closed" value="true" />
+      <created>1768442855169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768442855169</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove all old themes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove all old themes" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
