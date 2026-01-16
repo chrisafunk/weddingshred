@@ -38238,4 +38238,12 @@ a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.img-half {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*# sourceMappingURL=style.css.map */

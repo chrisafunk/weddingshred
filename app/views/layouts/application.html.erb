@@ -7,7 +7,7 @@
 
     <!-- Core Plugins -->
     <%= javascript_include_tag "plugins/jquery/jquery.min" %>
-    <%= stylesheet_link_tag "plugins/bootstrap/bootstrap.min" %>
+    <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
     <%= stylesheet_link_tag "plugins/flaticon/flaticon" %>
     <%= stylesheet_link_tag "plugins/themify-icons/css/themify-icons" %>
     <%= stylesheet_link_tag "plugins/fontawesome/css/all.min" %>
@@ -19,68 +19,103 @@
     <!-- Core CSS -->
     <%= stylesheet_link_tag "style" %>
     <%= favicon_link_tag 'favicon.png' %>
-
-
     <%= yield :page_styles %>
 
     <!-- Importmap (Turbo/Stimulus) -->
     <%= javascript_importmap_tags %>
   </head>
   <body class="h-100">
+
+  <!--*******************
+    Preloader start
+********************-->
+  <div id="preloader">
+    <div class="sk-three-bounce">
+      <div class="sk-child sk-bounce1"></div>
+      <div class="sk-child sk-bounce2"></div>
+      <div class="sk-child sk-bounce3"></div>
+    </div>
+  </div>
+  <!--*******************
+      Preloader end
+  ********************-->
+
+
   <% unless controller_name == "sessions" && action_name == "new" %>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        Shredding for the Wedding
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-            <% if defined?(root_path) %>
-              <li class="nav-item"><%= link_to "Dashboard", root_path, class: "nav-link" %></li>
-            <% end %>
-            <% if defined?(leaderboard_path) %>
-              <li class="nav-item"><%= link_to "Leaderboard", leaderboard_path, class: "nav-link" %></li>
-            <% end %>
-            <% if respond_to?(:user_signed_in?) && user_signed_in? %>
-              <li class="nav-item">
-                <%= link_to "Sign out",
-                            destroy_user_session_path,
-                            data: { "turbo-method": :delete },
-                            class: "nav-link" %>
-              </li>
-            <% else %>
-              <li class="nav-item">
-                <%= link_to "Sign in",
-                            (defined?(new_user_session_path) ? new_user_session_path : "#"),
-                            class: "nav-link" %>
-              </li>
-            <% end %>
-          </ul>
-        </div>
-      </div>
-    </nav>
+
+
+  <!--**********************************
+      Main wrapper start
+  ***********************************-->
+  <div id="main-wrapper">
+
+    <!--**********************************
+        Nav header start
+    ***********************************-->
+    <%= render 'shared/nav_header' %>
+    <!--**********************************
+        Nav header end
+    ***********************************-->
+
+    <!--**********************************
+            Chat box start
+    ***********************************-->
+    <%= render 'shared/chat_box' %>
+    <!--**********************************
+            Chat box End
+     ***********************************-->
+
+    <!--**********************************
+            Header start
+    ***********************************-->
+    <%= render 'shared/header' %>
+    <!--**********************************
+        Header end ti-comment-alt
+    ***********************************-->
+
+    <!--**********************************
+        Sidebar start
+    ***********************************-->
+    <%= render 'shared/sidebar' %>
+    <!--**********************************
+        Sidebar end
+    ***********************************-->
+
+
+    <%= yield %>
+    <!--**********************************
+          Content body end
+      ***********************************-->
+
+    <!--**********************************
+        Footer start
+    ***********************************-->
+    <%= render 'shared/footer' %>
+    <!--**********************************
+        Footer end
+    ***********************************-->
+  </div>
+  <!--**********************************
+      Main wrapper end
+  ***********************************-->
+  <% else %>
+    <%= yield %>
+
+
   <% end %>
+    <!-- Plugin JS -->
+    <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
+    <%= javascript_include_tag "plugins/bootstrap-select/bootstrap-select.min" %>
+    <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
+    <%= javascript_include_tag "plugins/fontawesome/js/all.min" %>
+
+    <%= yield :page_scripts %>
+
+    <!-- Core JS -->
+    <%= javascript_include_tag "settings" %>
+    <%= javascript_include_tag "deznav-init" %>
+    <%= javascript_include_tag "custom.min" %>
 
 
-
-      <%= yield %>
-
-
-
-  <!-- Plugin JS -->
-  <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
-  <%= javascript_include_tag "plugins/bootstrap-select/bootstrap-select.min" %>
-  <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
-  <%= javascript_include_tag "plugins/fontawesome/js/all.min" %>
-  <%= javascript_include_tag "plugins/owl-carousel/owl.carousel" %>
-
-  <!-- Core JS -->
-  <%= javascript_include_tag "settings" %>
-  <%= javascript_include_tag "deznav-init" %>
-  <%= javascript_include_tag "custom.min" %>
-
-
-  <%= yield :page_scripts %>
   </body>
 </html>

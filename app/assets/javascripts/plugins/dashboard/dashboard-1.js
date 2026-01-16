@@ -140,139 +140,150 @@
 		var chartTimelineRender =  new ApexCharts(document.querySelector("#chartTimeline"), optionsTimeline);
 		 chartTimelineRender.render();
 	}
-	
-	var chartBar = function(){
-		var optionsArea = {
-          series: [{
-            name: "Distance",
-			type: 'line',
-           
-			data: [90, 120, 70, 130, 80, 140, 50]
-          }
-        ],
-          chart: {
-          height: 200,
-          type: 'area',
-		  group: 'social',
-		  toolbar: {
-            show: false
-          },
-          zoom: {
-            enabled: false
-          },
-		  dropShadow: {
-				enabled: true,
-				enabledOnSeries: undefined,
-				top: 5,
-				left: 0,
-				blur: 3,
-				color: '#000',
-				opacity: 0.1
-			},
-        },
-		
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          width: [3],
-		  colors:['#0b2a97'],
-		  curve: 'smooth'
-        },
-        legend: {
-			show:false,
-          tooltipHoverFormatter: function(val, opts) {
-            return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
-          },
-		  
-        },
-        markers: {
-		  strokeWidth: [3],
-		  strokeColors: ['#0B2A97'],
-		  border:0,
-		  colors:['#fff'],
-          hover: {
-            size: 5,
-          }
-        },
-        xaxis: {
-          categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ],
-		  axisTicks:false,
-		  labels: {
-		   style: {
-			  colors: '#818995',
-			  fontSize: '12px',
-			   fontFamily: 'Poppins',
-			  fontWeight: 50,
-			  
-			},
-		  },
-        },
-		yaxis: {
-			labels: {
-			offsetX:-16,
-		   style: {
-			  colors: '#818995',
-			  fontSize: '12px',
-			   fontFamily: 'Poppins',
-			  fontWeight: 50,
-			  
-			},
-		  },
-		},
-		fill: {
-			colors:['#0b2a97'],
-			type:'solid',
-			opacity: 1
-		},
-		colors:['#0B2A97'],
-        grid: {
-          borderColor: 'transparent',
-		  xaxis: {
-            lines: {
-              show: true
-            }
-          }
-        },
-		 responsive: [
-		 {
-			breakpoint:1601,
-			options:{
-				chart: {
-					height:400
-				},
-			},
-		 }
-			,{
-			breakpoint: 768,
-			options: {
-				chart: {
-					height:250
-				},
-				markers: {
-				  strokeWidth: [4],
-				  strokeColors: ['#0B2A97'],
-				  border:0,
-				  colors:['#fff'],
-				  hover: {
-					size: 6,
-				  }
-				},
-				stroke: {
-				  width: [6],
-				  colors:['#0B2A97'],
-				  curve: 'smooth'
-				},
-			}
-		 }
-		 ] 
-        };
-		var chartArea = new ApexCharts(document.querySelector("#chartBar"), optionsArea);
-        chartArea.render();
-		
 
-	}	
-	/* Function ============ */
+
+
+    var chartBar = function(){
+
+        var chartBarEl = document.querySelector("#chartBar");
+        if (chartBarEl) {
+
+            var optionsArea = {
+                series: [{
+                    name: "Distance",
+                    type: 'line',
+
+                    data: [90, 120, 70, 130, 80, 140, 50]
+                }
+                ],
+                chart: {
+                    height: 200,
+                    type: 'area',
+                    group: 'social',
+                    toolbar: {
+                        show: false
+                    },
+                    zoom: {
+                        enabled: false
+                    },
+                    dropShadow: {
+                        enabled: true,
+                        enabledOnSeries: undefined,
+                        top: 5,
+                        left: 0,
+                        blur: 3,
+                        color: '#000',
+                        opacity: 0.1
+                    },
+                },
+
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    width: [3],
+                    colors: ['#0b2a97'],
+                    curve: 'smooth'
+                },
+                legend: {
+                    show: false,
+                    tooltipHoverFormatter: function (val, opts) {
+                        return val + ' - ' + opts.w.globals.series[opts.seriesIndex][opts.dataPointIndex] + ''
+                    },
+
+                },
+                markers: {
+                    strokeWidth: [3],
+                    strokeColors: ['#0B2A97'],
+                    border: 0,
+                    colors: ['#fff'],
+                    hover: {
+                        size: 5,
+                    }
+                },
+                xaxis: {
+                    categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+                    axisTicks: false,
+                    labels: {
+                        style: {
+                            colors: '#818995',
+                            fontSize: '12px',
+                            fontFamily: 'Poppins',
+                            fontWeight: 50,
+
+                        },
+                    },
+                },
+                yaxis: {
+                    labels: {
+                        offsetX: -16,
+                        style: {
+                            colors: '#818995',
+                            fontSize: '12px',
+                            fontFamily: 'Poppins',
+                            fontWeight: 50,
+
+                        },
+                    },
+                },
+                fill: {
+                    colors: ['#0b2a97'],
+                    type: 'solid',
+                    opacity: 1
+                },
+                colors: ['#0B2A97'],
+                grid: {
+                    borderColor: 'transparent',
+                    xaxis: {
+                        lines: {
+                            show: true
+                        }
+                    }
+                },
+                responsive: [
+                    {
+                        breakpoint: 1601,
+                        options: {
+                            chart: {
+                                height: 400
+                            },
+                        },
+                    }
+                    , {
+                        breakpoint: 768,
+                        options: {
+                            chart: {
+                                height: 250
+                            },
+                            markers: {
+                                strokeWidth: [4],
+                                strokeColors: ['#0B2A97'],
+                                border: 0,
+                                colors: ['#fff'],
+                                hover: {
+                                    size: 6,
+                                }
+                            },
+                            stroke: {
+                                width: [6],
+                                colors: ['#0B2A97'],
+                                curve: 'smooth'
+                            },
+                        }
+                    }
+                ]
+            };
+            var chartArea = new ApexCharts(chartBarEl, optionsArea);
+            /*  var chartArea = new ApexCharts(document.querySelector("#chartBar"), optionsArea);*/
+            chartArea.render();
+        }else {
+            console.error("Chart container #chartBar not found");
+            return;
+        }
+
+
+     }
+     /* Function ============ */
 		return {
 			init:function(){
 			},
