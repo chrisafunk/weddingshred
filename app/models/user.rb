@@ -1,5 +1,9 @@
 
 class User < ApplicationRecord
+
+  validates :password, length: { minimum: 7 }, allow_blank: true
+  validates :password, confirmation: true, allow_blank: true
+
   # Devise modules—adjust to your preference
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable

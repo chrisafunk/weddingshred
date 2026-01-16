@@ -26,9 +26,10 @@
   </head>
   <body class="h-100">
 
+
   <!--*******************
     Preloader start
-********************-->
+  ********************-->
   <div id="preloader">
     <div class="sk-three-bounce">
       <div class="sk-child sk-bounce1"></div>
@@ -40,9 +41,7 @@
       Preloader end
   ********************-->
 
-
   <% unless controller_name == "sessions" && action_name == "new" %>
-
 
   <!--**********************************
       Main wrapper start
@@ -81,7 +80,28 @@
         Sidebar end
     ***********************************-->
 
+    <!--**********************************
+       Flash Messages start
+     ***********************************-->
+    <% flash.each do |key, message| %>
+      <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+        <div class="toast show align-items-center text-bg-<%= key == "error" ? "danger" : key == "notice" ? "success" : "info" %> border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              <%= message %>
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <!--**********************************
+          Flash Messages end
+      ***********************************-->
 
+    <!--**********************************
+        Content body start
+      ***********************************-->
     <%= yield %>
     <!--**********************************
           Content body end
@@ -98,14 +118,40 @@
   <!--**********************************
       Main wrapper end
   ***********************************-->
+
   <% else %>
+
+    <!--**********************************
+         Flash Messages start
+     ***********************************-->
+    <% flash.each do |key, message| %>
+      <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+        <div class="toast show align-items-center text-bg-<%= key == "error" ? "danger" : key == "notice" ? "success" : "info" %> border-0" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              <%= message %>
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <!--**********************************
+          Flash Messages end
+      ***********************************-->
+
+    <!--**********************************
+        Devise Login and Registration start
+    ***********************************-->
     <%= yield %>
+    <!--**********************************
+        Devise Login and Registration end
+    ***********************************-->
 
 
   <% end %>
     <!-- Plugin JS -->
     <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
-    <%= javascript_include_tag "plugins/bootstrap-select/bootstrap-select.min" %>
     <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
     <%= javascript_include_tag "plugins/fontawesome/js/all.min" %>
 
@@ -115,7 +161,6 @@
     <%= javascript_include_tag "settings" %>
     <%= javascript_include_tag "deznav-init" %>
     <%= javascript_include_tag "custom.min" %>
-
 
   </body>
 </html>

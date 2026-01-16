@@ -40,5 +40,8 @@ Rails.application.routes.draw do
   # suppress Chrome DevTools "This site uses an app-specific manifest" warning
   get '/.well-known/appspecific/com.chrome.devtools.json', to: proc { [204, {}, ['']] }
 
+  resource :profile, only: [:edit, :update]
+
+
 
 end

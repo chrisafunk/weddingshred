@@ -4,20 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Lots of first round fixes for the UI template">
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_chat_box.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_nav_header.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" afterDir="false" />
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="updates for errors and login">
+      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_flash.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/dashboard/dashboard-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/plugins/dashboard/dashboard-1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/ui/smoke.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,33 +48,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1768452050310",
-    "credentialsType org.jetbrains.plugins.ruby.remote.impl.RubyCreateRemoteInterpreterDialog$RubyCreateRemoteSdkForm": "WSL",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/cfunk/weddingshred/app/assets/stylesheets/gymove/plugins",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP&quot;: &quot;1768452050310&quot;,
+    &quot;credentialsType org.jetbrains.plugins.ruby.remote.impl.RubyCreateRemoteInterpreterDialog$RubyCreateRemoteSdkForm&quot;: &quot;WSL&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl.localhost/Ubuntu/home/cfunk/weddingshred/app/assets/stylesheets/gymove/plugins&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\stylesheets\gymove\plugins" />
@@ -171,7 +168,7 @@
       <workItem from="1768449805614" duration="946000" />
       <workItem from="1768450772800" duration="789000" />
       <workItem from="1768451590137" duration="375000" />
-      <workItem from="1768451992092" duration="33608000" />
+      <workItem from="1768451992092" duration="43129000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -221,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768514284720</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updates for errors and login">
+      <option name="closed" value="true" />
+      <created>1768528861827</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1768528861827</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +239,8 @@
     <MESSAGE value="moved the theme" />
     <MESSAGE value="update for wsl" />
     <MESSAGE value="Lots of first round fixes for the UI template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots of first round fixes for the UI template" />
+    <MESSAGE value="updates for errors and login" />
+    <option name="LAST_COMMIT_MESSAGE" value="updates for errors and login" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

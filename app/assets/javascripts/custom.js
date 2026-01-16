@@ -397,3 +397,4 @@ jQuery(window).on('resize',function () {
 	Gymove.resize();
 });
 /*  Window Resize END */
+
