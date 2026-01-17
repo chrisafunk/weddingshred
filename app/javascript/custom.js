@@ -46,7 +46,9 @@ var Gymove = function(){
 					setCookie('version', 'light');
 				}
 			});
-			var version = getCookie('version');
+
+            /*
+            var version = getCookie('version');
 			if(version != null){	
 				jQuery('body').attr('data-theme-version', version);
 			}
@@ -58,7 +60,7 @@ var Gymove = function(){
 					jQuery('body').attr('data-theme-version', version);
 				}
 			})
-			
+			*/
 			setTimeout(function(){
 				if(jQuery('body').attr('data-theme-version') === "dark")
 				{
@@ -329,11 +331,7 @@ var Gymove = function(){
 			$(this).toggleClass("heart-blast");
 		});
 	}	
-	var handelBootstrapSelect = function(){
-		/* Bootstrap Select box function by  = bootstrap-select.min.js */ 
-		jQuery('select').selectpicker();
-		/* Bootstrap Select box function by  = bootstrap-select.min.js end*/
-	}	
+
 	/* Function ============ */
 	return {
 		init:function(){
@@ -356,7 +354,6 @@ var Gymove = function(){
 			handleLightgallery();
 			handleCkEditor();
 			handleshowPass();
-			handelBootstrapSelect();
 			heartBlast();
 			handleThemeMode();
 			

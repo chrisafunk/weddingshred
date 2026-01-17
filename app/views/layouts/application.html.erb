@@ -8,6 +8,10 @@
     <!-- Core Plugins -->
     <%= javascript_include_tag "plugins/jquery/jquery.min" %>
     <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
+    <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
+
+
+    <%= javascript_include_tag "plugins/fontawesome/js/all.min" %>
     <%= stylesheet_link_tag "plugins/flaticon/flaticon" %>
     <%= stylesheet_link_tag "plugins/themify-icons/css/themify-icons" %>
     <%= stylesheet_link_tag "plugins/fontawesome/css/all.min" %>
@@ -23,6 +27,7 @@
 
     <!-- Importmap (Turbo/Stimulus) -->
     <%= javascript_importmap_tags %>
+
   </head>
   <body class="h-100">
 
@@ -150,17 +155,15 @@
 
 
   <% end %>
-    <!-- Plugin JS -->
-    <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
-    <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
-    <%= javascript_include_tag "plugins/fontawesome/js/all.min" %>
 
-    <%= yield :page_scripts %>
+  <%= javascript_include_tag "plugins/jquery/jquery.min" %>
+  <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
+  <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
 
-    <!-- Core JS -->
-    <%= javascript_include_tag "settings" %>
-    <%= javascript_include_tag "deznav-init" %>
-    <%= javascript_include_tag "custom.min" %>
+  <%= yield :page_scripts %>
+
+
+
 
   </body>
 </html>

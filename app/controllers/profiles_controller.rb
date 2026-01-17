@@ -13,6 +13,7 @@ class ProfilesController < ApplicationController
     if user_params[:password].present?
       # Update with password fields
       if @user.update(user_params)
+        bypass_sign_in(@user, scope: :user)
         redirect_to edit_profile_path, notice: "Profile updated successfully."
       else
         flash[:error] = "There was a problem updating your profile."

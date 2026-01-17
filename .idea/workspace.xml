@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="updates for errors and login">
-      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_flash.html.erb" afterDir="false" />
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Updates to profile">
+      <change afterPath="$PROJECT_DIR$/app/javascript/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/metisMenu.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/deznav-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/deznav-init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/apexchart/apexchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/plugins/apexchart/apexchart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/importmap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,47 +57,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP&quot;: &quot;1768452050310&quot;,
-    &quot;credentialsType org.jetbrains.plugins.ruby.remote.impl.RubyCreateRemoteInterpreterDialog$RubyCreateRemoteSdkForm&quot;: &quot;WSL&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;//wsl.localhost/Ubuntu/home/cfunk/weddingshred/app/assets/stylesheets/gymove/plugins&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1768593526805",
+    "credentialsType org.jetbrains.plugins.ruby.remote.impl.RubyCreateRemoteInterpreterDialog$RubyCreateRemoteSdkForm": "WSL",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "//wsl.localhost/Ubuntu/home/cfunk/weddingshred/app/javascript",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\javascript" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\stylesheets\gymove\plugins" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts\gymove\plugins" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts\gymove\icons" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets" />
-      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\views\dashboard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\javascript" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\views\shared" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\images" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\stylesheets" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts" />
-      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -169,6 +178,7 @@
       <workItem from="1768450772800" duration="789000" />
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
+      <workItem from="1768593464634" duration="19804000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -226,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768528861827</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updates to profile">
+      <option name="closed" value="true" />
+      <created>1768593681074</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1768593681074</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +258,8 @@
     <MESSAGE value="update for wsl" />
     <MESSAGE value="Lots of first round fixes for the UI template" />
     <MESSAGE value="updates for errors and login" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates for errors and login" />
+    <MESSAGE value="Updates to profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to profile" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
