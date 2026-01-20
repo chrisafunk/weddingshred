@@ -4,26 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Updates to profile">
-      <change afterPath="$PROJECT_DIR$/app/javascript/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/metisMenu.min.js" afterDir="false" />
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="I have no idea too drunk">
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/_card_wrapper.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/all.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/custom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/deznav-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/deznav-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/apexchart/apexchart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/plugins/apexchart/apexchart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/settings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/bootstrap/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/dashboard/cms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/dashboard/dashboard-1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/dashboard/distance-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/dashboard/workout-statistic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/global/global.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/plugins/jqueryui/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/plugins/bootstrap/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/plugins/bootstrap/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/plugins/jqueryui/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/assets_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/assets_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_nav_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_nav_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_sidebar.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/importmap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/importmap.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,17 +92,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\javascript" />
+      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts\plugins\global" />
+      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\stylesheets\gymove\plugins" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts\gymove\plugins" />
-      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts\gymove\icons" />
-      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts\plugins" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\javascript" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\views\shared" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\images" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\stylesheets" />
-      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts" />
     </key>
   </component>
   <component name="RunManager">
@@ -178,7 +183,7 @@
       <workItem from="1768450772800" duration="789000" />
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
-      <workItem from="1768593464634" duration="19804000" />
+      <workItem from="1768593464634" duration="31441000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -244,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768593681074</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="I have no idea too drunk">
+      <option name="closed" value="true" />
+      <created>1768632103025</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1768632103025</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +272,8 @@
     <MESSAGE value="Lots of first round fixes for the UI template" />
     <MESSAGE value="updates for errors and login" />
     <MESSAGE value="Updates to profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates to profile" />
+    <MESSAGE value="I have no idea too drunk" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have no idea too drunk" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

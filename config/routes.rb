@@ -42,6 +42,7 @@ Rails.application.routes.draw do
 
   resource :profile, only: [:edit, :update]
 
+  get 'admin', to: 'admin#index'
 
 
 end

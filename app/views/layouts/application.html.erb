@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <%= csrf_meta_tags %><%= csp_meta_tag %>
 
-    <!-- Core Plugins -->
-    <%= javascript_include_tag "plugins/jquery/jquery.min" %>
-    <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
-    <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
-
-
-    <%= javascript_include_tag "plugins/fontawesome/js/all.min" %>
     <%= stylesheet_link_tag "plugins/flaticon/flaticon" %>
     <%= stylesheet_link_tag "plugins/themify-icons/css/themify-icons" %>
     <%= stylesheet_link_tag "plugins/fontawesome/css/all.min" %>
@@ -156,9 +149,16 @@
 
   <% end %>
 
-  <%= javascript_include_tag "plugins/jquery/jquery.min" %>
-  <%= javascript_include_tag "plugins/bootstrap/bootstrap.bundle.min" %>
-  <%= javascript_include_tag "plugins/metismenu/metisMenu.min" %>
+  <!-- Core Plugins -->
+
+  <%= javascript_include_tag "jquery.min" %>
+  <%= javascript_include_tag "bootstrap.bundle.min" %>
+  <%= javascript_include_tag "settings" %>
+  <%= javascript_include_tag "deznav-init" %>
+  <%= javascript_include_tag "metisMenu.min" %>
+  <%= javascript_include_tag "custom" %>
+
+
 
   <%= yield :page_scripts %>
 

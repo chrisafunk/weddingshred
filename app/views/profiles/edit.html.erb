@@ -1,10 +1,12 @@
-
+<% content_for :dashboard_bar do %>
+ User Profile
+<% end %>
 <div class="content-body default-height">
   <div class="container-fluid">
     <div class="page-titles">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Form</a></li>
-        <li class="breadcrumb-item active"><a href="javascript:void(0)">Edit Profile</a></li>
+
+        <li class="breadcrumb-item active">User Profile</li>
       </ol>
     </div>
     <!-- row -->
@@ -15,6 +17,12 @@
             <h4 class="card-title">Edit Profile</h4>
           </div>
           <div class="card-body">
+
+<!--**********************************
+      Page content start
+ ***********************************-->
+
+
             <%= form_for @user, url: profile_path, html: { method: :put, multipart: true, class: "row g-3" } do |f| %>
               <div class="col-md-6 mb-3">
                 <p class="form-control-plaintext"><strong>Email Address:</strong> <%= @user.email %></p>
@@ -61,10 +69,22 @@
                 </div>
               </div>
             <% end %>
+
+<!--**********************************
+      Page content end
+ ***********************************-->
+
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!--**********************************
+    Scripts
+***********************************-->
+<% use_plugin :global, :'bootstrap-select' %>
+
+
 

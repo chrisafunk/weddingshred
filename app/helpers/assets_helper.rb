@@ -3,13 +3,9 @@
 module AssetsHelper
   # Map plugin names to the CSS/JS logical paths you installed.
   PLUGIN_ASSETS = {
+
     apexchart: {
       js: ["plugins/apexchart/apexchart"]
-    },
-
-    bootstrap: {
-      js: ["plugins/bootstrap/bootstrap.bundle.min"],
-      css: ["plugins/bootstrap/bootstrap", "plugins/bootstrap/bootstrap.min"]
     },
 
     "bootstrap-datepicker-master": {
@@ -60,12 +56,6 @@ module AssetsHelper
       css: ["plugins/clockpicker/bootstrap-clockpicker.min"]
     },
 
-    dashboard: {
-      js: ["plugins/dashboard/cms",
-           "plugins/dashboard/dashboard-1",
-           "plugins/dashboard/distance-map",
-           "plugins/dashboard/workout-statistic"]
-    },
 
     datatables: {
       js: ["plugins/datatables/jquery.dataTables.min"],
@@ -94,13 +84,7 @@ module AssetsHelper
         css: ["plugins/fullcalendar/fullcalendar.min", "plugins/fullcalendar/main", "plugins/fullcalendar/main.min"]
       },
 
-    global: {
-      js: ["plugins/global/global.min"]
-    },
 
-    jquery: {
-      js: ["plugins/jquery/jquery.min"]
-    },
 
     "jquery-asColor": {
       js: ["plugins/jquery-asColor/jquery-asColor.min"]
@@ -135,10 +119,6 @@ module AssetsHelper
       css: ["plugins/jquery-steps/jquery.steps"]
     },
 
-    jqueryui: {
-      js: ["plugins/jqueryui/jquery-ui.min"],
-      css: ["plugins/jqueryui/jquery-ui.min"]
-    },
 
     jqvmap:
       {
@@ -284,10 +264,6 @@ module AssetsHelper
       end
     end
     nil
-  end
-
-  def hello_from_assets
-    "Hello from App helper"
   end
 
 end
