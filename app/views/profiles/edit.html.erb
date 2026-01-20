@@ -1,27 +1,19 @@
 <% content_for :dashboard_bar do %>
- User Profile
+ Profile
 <% end %>
+
+<% content_for :card_title do %>
+  All Users
+<% end %>
+
 <div class="content-body default-height">
   <div class="container-fluid">
-    <div class="page-titles">
-      <ol class="breadcrumb">
 
-        <li class="breadcrumb-item active">User Profile</li>
-      </ol>
-    </div>
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <div class="card">
-          <div class="card-header">
-            <h4 class="card-title">Edit Profile</h4>
-          </div>
-          <div class="card-body">
-
-<!--**********************************
-      Page content start
- ***********************************-->
-
+        <%= render layout: "layouts/card_wrapper" do %>
+          <!-- Your page content here (form, etc.) -->
 
             <%= form_for @user, url: profile_path, html: { method: :put, multipart: true, class: "row g-3" } do |f| %>
               <div class="col-md-6 mb-3">
@@ -70,12 +62,7 @@
               </div>
             <% end %>
 
-<!--**********************************
-      Page content end
- ***********************************-->
-
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </div>

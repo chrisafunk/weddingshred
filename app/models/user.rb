@@ -9,13 +9,21 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-  enum :role, { user: 0, admin: 1 }
+  enum :role, { member: 0, super_admin: 1, group_admin:2 }
 
 
   has_many :workout_entries, dependent: :destroy
 
-  def admin?
-    role == "admin"
+
+  def role_display_name
+    case role
+    when "super_admin"
+      "Super Admin"
+    when "group_admin"
+      "Group Admin"
+    else
+      "Member"
+    end
   end
 
   def time_zone_or_default

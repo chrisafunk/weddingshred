@@ -1,0 +1,46 @@
+<% content_for :dashboard_bar do %>
+  Admin Dashboard
+<% end %>
+
+<% content_for :card_title do %>
+  All Users
+<% end %>
+<div class="content-body default-height">
+  <div class="container-fluid">
+    <!-- row -->
+    <div class="row">
+      <div class="col-xl-12 col-xxl-12">
+        <%= render layout: "layouts/card_wrapper" do %>
+          <!-- Your page content here (form, etc.) -->
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <td><%= user.first_name %> <%= user.last_name %> (<%= user.display_name %>)</td>
+                <td><%= user.email %></td>
+                <td><%= user.role_display_name %></td>
+                <td>
+                  <%= link_to "Edit", edit_admin_user_path(user), class: "btn btn-primary btn-sm" %>
+                </td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+
+          <%= link_to "Cancel", admin_path, class: "btn btn-secondary mb-3" %>
+
+
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

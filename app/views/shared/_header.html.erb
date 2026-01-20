@@ -189,7 +189,7 @@
                     <%= current_user&.display_name.presence || current_user&.first_name %>
                   </strong>
                 </span>
-                <p class="fs-12 mb-0"> <%= current_user&.role %></p>
+                <p class="fs-12 mb-0"> <%= current_user.role_display_name %></p>
               </div>
             </a>
             <div class="dropdown-menu dropdown-menu-end">

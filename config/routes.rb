@@ -18,9 +18,6 @@ Rails.application.routes.draw do
   end
 
 
-  get "ui/smoke", to: "ui#smoke"
-
-
   resources :workout_entries
 
 
@@ -43,6 +40,9 @@ Rails.application.routes.draw do
   resource :profile, only: [:edit, :update]
 
   get 'admin', to: 'admin#index'
+  namespace :admin do
+    resources :users, only: [:index, :edit, :update]
+  end
 
 
 end

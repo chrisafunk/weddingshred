@@ -1,24 +1,20 @@
 <% content_for :dashboard_bar do %>
-  User Profile
+  Admin Dashboard
 <% end %>
 
 <% content_for :card_title do %>
-  List Users
+  All Users
 <% end %>
-
 <div class="content-body default-height">
   <div class="container-fluid">
     <!-- row -->
     <div class="row">
-
       <div class="col-xl-12 col-xxl-12">
-      <%= render layout: "layouts/card_wrapper" do %>
-        <!-- Your page content here (form, etc.) -->
-
-      asd
+        <%= render layout: "layouts/card_wrapper" do %>
+          <!-- Your page content here (form, etc.) -->
+          <%= link_to "List All Users", admin_users_path, class: "btn btn-info mb-3" %>
 
       <% end %>
-
       </div>
     </div>
   </div>
