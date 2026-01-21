@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_01_16_050714) do
+ActiveRecord::Schema[8.1].define(version: 2026_01_21_021418) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
@@ -20,6 +20,16 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_16_050714) do
     t.string "name"
     t.string "unit"
     t.datetime "updated_at", null: false
+  end
+
+  create_table "memberships", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "status"
+    t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.bigint "wedding_group_id", null: false
+    t.index ["user_id"], name: "index_memberships_on_user_id"
+    t.index ["wedding_group_id"], name: "index_memberships_on_wedding_group_id"
   end
 
   create_table "month_plans", force: :cascade do |t|
@@ -66,6 +76,14 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_16_050714) do
     t.index ["role"], name: "index_users_on_role"
   end
 
+  create_table "wedding_groups", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "location"
+    t.string "name"
+    t.datetime "updated_at", null: false
+    t.date "wedding_date"
+  end
+
   create_table "workout_entries", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.decimal "distance_km"
@@ -86,6 +104,8 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_16_050714) do
     t.index ["user_id"], name: "index_workout_entries_on_user_id"
   end
 
+  add_foreign_key "memberships", "users"
+  add_foreign_key "memberships", "wedding_groups"
   add_foreign_key "plan_exercises", "exercises"
   add_foreign_key "plan_exercises", "month_plans"
   add_foreign_key "workout_entries", "exercises"

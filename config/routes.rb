@@ -42,7 +42,17 @@ Rails.application.routes.draw do
   get 'admin', to: 'admin#index'
   namespace :admin do
     resources :users, only: [:index, :edit, :update]
+    resources :wedding_groups do
+      member do
+        get :add_member
+        post :set_member   # This creates the POST route with the same name
+        post :remove_member
+        post :create_member
+      end
+    end
+    resources :users
   end
+
 
 
 end

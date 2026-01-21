@@ -3,7 +3,7 @@
 <% end %>
 
 <% content_for :card_title do %>
-  All Users
+  Actions
 <% end %>
 <div class="content-body default-height">
   <div class="container-fluid">
@@ -12,7 +12,9 @@
       <div class="col-xl-12 col-xxl-12">
         <%= render layout: "layouts/card_wrapper" do %>
           <!-- Your page content here (form, etc.) -->
-          <%= link_to "List All Users", admin_users_path, class: "btn btn-info mb-3" %>
+          <%= link_to "Manage Users", admin_users_path, class: "btn btn-info mb-3 mr-2" %>
+          <%= link_to "Manage Wedding Groups", admin_wedding_groups_path, class: "btn btn-success mb-3" %>
+
 
       <% end %>
       </div>

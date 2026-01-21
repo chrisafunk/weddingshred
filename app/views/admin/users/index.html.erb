@@ -3,7 +3,7 @@
 <% end %>
 
 <% content_for :card_title do %>
-  All Users
+  Manage Users
 <% end %>
 <div class="content-body default-height">
   <div class="container-fluid">
@@ -35,8 +35,10 @@
             </tbody>
           </table>
 
-          <%= link_to "Cancel", admin_path, class: "btn btn-secondary mb-3" %>
-
+          <div class="d-flex gap-2 mt-3 mb-3">
+            <%= link_to "Cancel", admin_path, class: "btn btn-secondary mb-3" %>
+            <%= link_to "Add User", new_admin_user_path, class: "btn btn-success mb-3" %>
+          </div>
 
 
         <% end %>

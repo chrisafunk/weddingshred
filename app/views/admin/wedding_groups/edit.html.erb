@@ -1,0 +1,50 @@
+<% content_for :dashboard_bar do %>
+  Admin Dashboard
+<% end %>
+
+<% content_for :card_title do %>
+  Edit Wedding Group
+<% end %>
+<div class="content-body default-height">
+  <div class="container-fluid">
+    <!-- row -->
+    <div class="row">
+      <div class="col-xl-12 col-xxl-12">
+        <%= render layout: "layouts/card_wrapper" do %>
+
+          <% if @wedding_group && @wedding_group.errors.any? %>
+            <div class="alert alert-danger">
+              <ul>
+                <% @wedding_group.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <!-- Your page content here (form, etc.) -->
+            <%= form_with(model: [:admin, @wedding_group], local: true) do |form| %>
+
+              <div class="form-group">
+                <%= form.label :name, "Wedding Group Name" %>
+                <%= form.text_field :name, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= form.label :wedding_date, "Date of Wedding" %>
+                <%= form.date_field :wedding_date, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                <%= form.label :location, "Location of Wedding" %>
+                <%= form.text_field :location, class: "form-control" %>
+              </div>
+
+            <div class="d-flex gap-2 mt-3 mb-3">
+              <%= link_to "Cancel", admin_wedding_groups_path, class: "btn btn-secondary ml-2" %>
+              <%= form.submit "Update Wedding Group", class: "btn btn-primary" %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

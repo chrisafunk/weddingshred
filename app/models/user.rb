@@ -13,7 +13,8 @@ class User < ApplicationRecord
 
 
   has_many :workout_entries, dependent: :destroy
-
+  has_many :memberships
+  has_many :wedding_groups, through: :memberships
 
   def role_display_name
     case role

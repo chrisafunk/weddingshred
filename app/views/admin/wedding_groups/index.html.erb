@@ -1,0 +1,60 @@
+<% content_for :dashboard_bar do %>
+Admin Dashboard
+<% end %>
+
+<% content_for :card_title do %>
+  Wedding Groups
+<% end %>
+<div class="content-body default-height">
+  <div class="container-fluid">
+    <!-- row -->
+    <div class="row">
+      <div class="col-xl-12 col-xxl-12">
+        <%= render layout: "layouts/card_wrapper" do %>
+          <!-- Your page content here (form, etc.) -->
+
+            <table class="table">
+              <thead>
+              <tr>
+                <th>Name</th>
+                <th>Wedding Date</th>
+                <th>Location</th>
+                <th>Members</th>
+                <th>Admins</th>
+                <th>Pending Members</th>
+                <th>Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <% @wedding_groups.each do |group| %>
+                <tr>
+                  <td><%= group.name %></td>
+                  <td><%= wedding_date_with_countdown(group.wedding_date) %></td>
+                  <td><%= group.location %></td>
+                  <td>
+                    <%= group.memberships.joins(:user).where(users: { role: "member" }).count %>
+                  </td>
+                  <td>
+                    <%= group.memberships.joins(:user).where(users: { role: ["group_admin", "super_admin"] }).count %>
+                  </td>
+                  <td>
+                    <%= group.memberships.joins(:user).where(users: { role: "member" }, status: "pending").count %>
+                  </td>
+                  <td>
+                    <%= link_to "Add Member", add_member_admin_wedding_group_path(group), class: "btn btn-sm btn-secondary" %>
+                    <%= link_to "Edit", edit_admin_wedding_group_path(group), class: "btn btn-sm btn-primary" %>
+                  </td>
+                </tr>
+              <% end %>
+              </tbody>
+            </table>
+
+          <div class="d-flex gap-2 mt-3 mb-3">
+            <%= link_to "Cancel", admin_path, class: "btn btn-secondary" %>
+            <%= link_to "Create New Wedding Group", new_admin_wedding_group_path, class: "btn btn-success" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
