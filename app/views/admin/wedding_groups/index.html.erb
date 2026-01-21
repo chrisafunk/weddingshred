@@ -35,7 +35,7 @@ Admin Dashboard
                     <%= group.memberships.joins(:user).where(users: { role: "member" }).count %>
                   </td>
                   <td>
-                    <%= group.memberships.joins(:user).where(users: { role: ["group_admin", "super_admin"] }).count %>
+                    <%= group.memberships.joins(:user).where(users: { role: ["group_admin_dashboard", "super_admin"] }).count %>
                   </td>
                   <td>
                     <%= group.memberships.joins(:user).where(users: { role: "member" }, status: "pending").count %>

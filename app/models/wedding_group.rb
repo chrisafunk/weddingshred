@@ -6,6 +6,6 @@ class WeddingGroup < ApplicationRecord
   validates :name, :wedding_date, :location, presence: true
 
   def has_group_admin?
-    memberships.where(role: "group_admin").exists?
+    memberships.where(role: "group_admin_dashboard").exists?
   end
 end

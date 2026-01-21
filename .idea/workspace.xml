@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Added admin user pages">
-      <change afterPath="$PROJECT_DIR$/app/controllers/admin/wedding_groups_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/admin/wedding_groups_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/users/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/add_member.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/new.html.erb" afterDir="false" />
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Update for wedding groups and admin management">
+      <change afterPath="$PROJECT_DIR$/app/controllers/group_admin_dashboard_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/group_admin_memberships_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/group_admin_dashboard/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/group_admin_memberships/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/ui_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/wedding_group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/wedding_group.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/wedding_groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_card_wrapper.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_card_wrapper.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +169,7 @@
       <workItem from="1768450772800" duration="789000" />
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
-      <workItem from="1768593464634" duration="48853000" />
+      <workItem from="1768593464634" duration="54307000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -266,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768940338281</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update for wedding groups and admin management">
+      <option name="closed" value="true" />
+      <created>1768965006208</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1768965006208</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,7 +285,8 @@
     <MESSAGE value="I have no idea too drunk" />
     <MESSAGE value="updates for users" />
     <MESSAGE value="Added admin user pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added admin user pages" />
+    <MESSAGE value="Update for wedding groups and admin management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update for wedding groups and admin management" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
