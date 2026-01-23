@@ -5,18 +5,20 @@
 <% content_for :card_title do %>
   Manage Members to (<%= @wedding_group.name %>)
 <% end %>
+
 <div class="content-body default-height">
   <div class="container-fluid">
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <%= render layout: "layouts/card_wrapper" do %>
-          <!-- Your page content here (form, etc.) -->
+
+        <%= render layout: "layouts/card_wrapper", locals: { card_title: "Group Members of (#{@wedding_group.name})" } do %>
+
+      <!-- Your page content here (form, etc.) -->
           <table class="table">
             <thead>
             <tr>
-              <th>First Name</th>
-              <th>Last Name</th>
+              <th>Last Name, First Name</th>
               <th>Display Name</th>
               <th>Email</th>
               <th>Role</th>
@@ -25,18 +27,33 @@
             </tr>
             </thead>
             <tbody>
-            <% @users.each do |user| %>
+            <% @group_members.each do |user| %>
+              <% next if user.role == 'super_admin' %>
               <% membership = @wedding_group.memberships.find { |m| m.user_id == user.id } %>
-              <tr class="<%= 'table-success' if membership %>">
-                <td><%= user.first_name %></td>
-                <td><%= user.last_name %></td>
+              <tr >
+                <td><%= user.last_name %>, <%= user.first_name %></td>
                 <td><%= user.display_name %></td>
                 <td><%= user.email %></td>
-                <td><%= user.role || '-' %></td>
+                <td><% if membership&.is_group_admin? %>
+                    Group Admin
+                  <% elsif membership %>
+                    Member
+                  <% else %>
+                    -
+                  <% end %></td>
                 <td><%= membership&.status || '-' %></td>
                 <td>
                   <% if membership %>
-                    <%= button_to 'Remove', remove_member_admin_wedding_group_path(@wedding_group, user_id: user.id), method: :post, class: 'btn btn-danger btn-sm' %>
+                    <div class="d-flex gap-2">
+                      <%= button_to 'Remove', remove_member_admin_wedding_group_path(@wedding_group, user_id: user.id), method: :post, class: 'btn btn-danger btn-sm' %>
+                      <%= button_to(
+                            membership.is_group_admin? ? 'Revoke Admin' : 'Make Admin',
+                            toggle_admin_admin_wedding_group_path(@wedding_group, user_id: user.id),
+                            method: :post,
+                            class: membership.is_group_admin? ? 'btn btn-warning btn-sm' : 'btn btn-primary btn-sm'
+                          )
+                      %>
+                    </div>
                   <% else %>
                     <%= button_to 'Add', set_member_admin_wedding_group_path(@wedding_group, user_id: user.id), method: :post, class: 'btn btn-success btn-sm' %>
                   <% end %>
@@ -45,12 +62,60 @@
             <% end %>
             </tbody>
           </table>
-            <div class="d-flex gap-2 mt-3 mb-3">
-              <%= link_to "Cancel", admin_wedding_groups_path, class: "btn btn-secondary ml-2" %>
-            </div>
+
+
           <% end %>
+
+
+        <%= render layout: "layouts/card_wrapper", locals: { card_title: "Non-Members" } do %>
+          <!-- Your page content here (form, etc.) -->
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Last Name, First Name</th>
+              <th>Display Name</th>
+              <th>Email</th>
+              <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% @non_members.each do |user| %>
+              <% next if user.role == 'super_admin' %>
+              <% membership = @wedding_group.memberships.find { |m| m.user_id == user.id } %>
+              <tr>
+                <td><%= user.last_name %>, <%= user.first_name %></td>
+                <td><%= user.display_name %></td>
+                <td><%= user.email %></td>
+                <td>
+                  <% if membership %>
+                    <div class="d-flex gap-2">
+                      <%= button_to 'Remove', remove_member_admin_wedding_group_path(@wedding_group, user_id: user.id), method: :post, class: 'btn btn-danger btn-sm' %>
+                      <%= button_to(
+                            membership.is_group_admin? ? 'Revoke Admin' : 'Make Admin',
+                            toggle_admin_admin_wedding_group_path(@wedding_group, user_id: user.id),
+                            method: :post,
+                            class: membership.is_group_admin? ? 'btn btn-warning btn-sm' : 'btn btn-primary btn-sm'
+                          )
+                      %>
+                    </div>
+                  <% else %>
+                    <%= button_to 'Add Member to Group', set_member_admin_wedding_group_path(@wedding_group, user_id: user.id), method: :post, class: 'btn btn-success btn-sm' %>
+                  <% end %>
+                </td>
+              </tr>
+            <% end %>
+            </tbody>
+          </table>
+
+        <% end %>
+
+
+        <div class="d-flex gap-2 mt-3 mb-3">
+          <%= link_to "Cancel", admin_wedding_groups_path, class: "btn btn-secondary ml-2" %>
+        </div>
 
       </div>
     </div>
   </div>
 </div>
+

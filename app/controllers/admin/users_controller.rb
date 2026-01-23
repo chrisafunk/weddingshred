@@ -58,6 +58,13 @@ class Admin::UsersController < ApplicationController
     end
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @user.memberships.destroy_all # Adjust if association is named differently
+    @user.destroy
+    redirect_to admin_users_path, notice: "User and all associated memberships deleted."
+  end
+
 
   private
 

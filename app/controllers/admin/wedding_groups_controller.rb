@@ -58,7 +58,10 @@ class Admin::WeddingGroupsController < ApplicationController
 
   def add_member
     @wedding_group = WeddingGroup.find(params[:id])
-    @users = User.all
+    all_users = User.where.not(role: 'super_admin').order(:last_name)
+    member_ids = @wedding_group.memberships.pluck(:user_id)
+    @group_members = all_users.where(id: member_ids)
+    @non_members = all_users.where.not(id: member_ids)
   end
 
   # POST /admin/wedding_groups/:id/add_member
@@ -92,6 +95,15 @@ class Admin::WeddingGroupsController < ApplicationController
     @wedding_group.user_ids = params[:wedding_group][:user_ids].reject(&:blank?)
     @wedding_group.memberships.where(user_id: @wedding_group.user_ids).update_all(status: "approved")
     redirect_to add_member_admin_wedding_group_path(@wedding_group), notice: "Members updated."
+  end
+
+  def toggle_admin
+    @wedding_group = WeddingGroup.find(params[:id])
+    membership = @wedding_group.memberships.find_by(user_id: params[:user_id])
+    if membership
+      membership.update(is_group_admin: !membership.is_group_admin)
+    end
+    redirect_to add_member_admin_wedding_group_path(@wedding_group)
   end
 
   private

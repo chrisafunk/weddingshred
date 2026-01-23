@@ -2,9 +2,6 @@
  Profile
 <% end %>
 
-<% content_for :card_title do %>
-  All Users
-<% end %>
 
 <div class="content-body default-height">
   <div class="container-fluid">
@@ -12,7 +9,7 @@
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <%= render layout: "layouts/card_wrapper" do %>
+        <%= render layout: "layouts/card_wrapper", locals: { card_title: "All Users" } do %>
           <!-- Your page content here (form, etc.) -->
 
             <%= form_for @user, url: profile_path, html: { method: :put, multipart: true, class: "row g-3" } do |f| %>

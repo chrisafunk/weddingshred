@@ -10,7 +10,8 @@
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <%= render layout: "layouts/card_wrapper" do %>
+
+        <%= render layout: "layouts/card_wrapper", locals: { card_title: " Edit Wedding Group" } do %>
 
           <% if @wedding_group && @wedding_group.errors.any? %>
             <div class="alert alert-danger">
@@ -39,11 +40,18 @@
               </div>
 
             <div class="d-flex gap-2 mt-3 mb-3">
-              <%= link_to "Cancel", admin_wedding_groups_path, class: "btn btn-secondary ml-2" %>
               <%= form.submit "Update Wedding Group", class: "btn btn-primary" %>
+              <%= button_to "Delete Wedding Group", admin_wedding_group_path(@wedding_group),
+                            method: :delete,
+                            data: { confirm:"Are you sure you want to delete this group and all associated memberships?" },
+                            class: "btn btn-danger" %>
+
             </div>
           <% end %>
         <% end %>
+        <div class="d-flex gap-2 mt-3 mb-3">
+          <%= link_to "Cancel", admin_wedding_groups_path, class: "btn btn-secondary ml-2" %>
+        </div>
       </div>
     </div>
   </div>

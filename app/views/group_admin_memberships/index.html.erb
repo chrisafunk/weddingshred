@@ -3,15 +3,13 @@
   Group Admin Dashboard
 <% end %>
 
-<% content_for :card_title do %>
-  Manage Members for <%= @wedding_group.name %>
-<% end %>
 <div class="content-body default-height">
   <div class="container-fluid">
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <%= render layout: "layouts/card_wrapper" do %>
+
+          <%= render layout: "layouts/card_wrapper", locals: { card_title: "Manage Members for (#{@wedding_group.name})" } do %>
 
           <table class="table">
             <thead>

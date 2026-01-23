@@ -2,15 +2,13 @@
   Admin Dashboard
 <% end %>
 
-<% content_for :card_title do %>
-  Create a new Wedding Group
-<% end %>
+
 <div class="content-body default-height">
   <div class="container-fluid">
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <%= render layout: "layouts/card_wrapper" do %>
+        <%= render layout: "layouts/card_wrapper", locals: { card_title: "Create a new Wedding Group" } do %>
 
           <% if @wedding_group && @wedding_group.errors.any? %>
             <div class="alert alert-danger">
@@ -36,12 +34,16 @@
               <%= form.text_field :location, class: "form-control" %>
             </div>
             <div class="form-group">
-              <%= link_to "Cancel", admin_wedding_groups_path, class: "btn btn-secondary ml-2" %>
               <%= form.submit "Create Wedding Group", class: "btn btn-success" %>
             </div>
 
           <% end %>
         <% end %>
+
+        <div class="form-group">
+          <%= link_to "Cancel", admin_wedding_groups_path, class: "btn btn-secondary ml-2" %>
+        </div>
+
       </div>
     </div>
   </div>

@@ -1,8 +1,0 @@
-
-<%= form_with model: [:admin, @exercise] do |f| %>
-  <%= f.label :name %><%= f.text_field :name %><br>
-  <%= f.label :category %><%= f.text_field :category %><br>
-  <%= f.label :unit %>
-  <%= f.select :unit, options_for_select(%w[reps minutes kg lb km miles count none], @exercise.unit), include_blank: true %><br>
-  <%= f.submit %>
-<% end %>

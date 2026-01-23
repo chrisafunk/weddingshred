@@ -3,15 +3,13 @@
   Admin Dashboard
 <% end %>
 
-<% content_for :card_title do %>
-  Manage User
-<% end %>
 <div class="content-body default-height">
   <div class="container-fluid">
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <%= render layout: "layouts/card_wrapper" do %>
+
+          <%= render layout: "layouts/card_wrapper", locals: { card_title: "Edit User" } do %>
 
           <% if @user && @user.errors.any? %>
             <div class="alert alert-danger">
@@ -50,13 +48,17 @@
               <%= form.select :role, User.roles.keys.map { |r| [r.titleize, r] }, {}, class: "form-control" %>
             </div>
             <div class="d-flex gap-2 mt-3 mb-3">
-              <%= link_to "Cancel", "javascript:history.back()", class: "btn btn-secondary ml-2" %>
               <%= form.submit "Update", class: "btn btn-success" %>
+              <%= button_to "Delete User", admin_user_path(@user), method: :delete, form: { class: "d-inline" }, class: "btn btn-danger", data: { confirm: "Are you sure you want to delete this user and all associated memberships?" } %>
+
             </div>
           <% end %>
 
-
       <% end %>
+        <div class="d-flex gap-2 mt-3 mb-3">
+          <%= link_to "Cancel", "javascript:history.back()", class: "btn btn-secondary ml-2" %>
+
+        </div>
       </div>
     </div>
   </div>

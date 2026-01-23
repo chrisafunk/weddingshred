@@ -25,6 +25,7 @@
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
         <%= render layout: "layouts/card_wrapper" do %>
+
           <!-- Your page content here (form, etc.) -->
           <p>Welcome, <%= current_user.display_name.presence || current_user.first_name %>!</p>
 

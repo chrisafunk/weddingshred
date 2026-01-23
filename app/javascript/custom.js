@@ -3,7 +3,27 @@ Core script to handle the entire theme and core functions
 **/
 
 var Gymove = function(){
-	/* Search Bar ============ */
+
+    //= require jquery
+    let confirmedElement = null;
+
+    $(document).on('click', 'form button[data-confirm]', function(e) {
+        e.preventDefault();
+        confirmedElement = this;
+        $('#confirmModalMessage').text($(this).data('confirm'));
+        $('#confirmModal').modal('show');
+    });
+
+    $('#confirmModalOk').on('click', function() {
+        $('#confirmModal').modal('hide');
+        if (confirmedElement) {
+            $(confirmedElement).closest('form').submit();
+            confirmedElement = null;
+        }
+    });
+
+
+    /* Search Bar ============ */
 	var screenWidth = $( window ).width();
 	
 	var homeSearch = function() {

@@ -9,8 +9,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
 
-  enum :role, { member: 0, super_admin: 1, group_admin:2 }
-
+  enum :role, { member: 0, super_admin: 1 }
 
   has_many :workout_entries, dependent: :destroy
   has_many :memberships

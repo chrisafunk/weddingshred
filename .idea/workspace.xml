@@ -4,22 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Update for wedding groups and admin management">
-      <change afterPath="$PROJECT_DIR$/app/controllers/group_admin_dashboard_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/group_admin_memberships_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/group_admin_dashboard/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/group_admin_memberships/index.html.erb" afterDir="false" />
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Created the basics for group admin">
+      <change afterPath="$PROJECT_DIR$/.idea/developer-tools.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20260122191137_add_is_group_admin_to_memberships.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/exercises_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/month_plan_leaderboards_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/month_plans_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/wedding_groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/wedding_groups_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/membership.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/membership.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/wedding_group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/wedding_group.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/exercises/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/exercises/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/exercises/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/exercises/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/month_plan_leaderboards/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/month_plans/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/month_plans/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/month_plans/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/month_plans/new.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/month_plans/show.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/wedding_groups/add_member.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/add_member.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/wedding_groups/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/admin/wedding_groups/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/wedding_groups/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/group_admin_dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/group_admin_dashboard/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/group_admin_memberships/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/group_admin_memberships/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/_card_wrapper.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_card_wrapper.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_//wsl.localhost/Ubuntu/home/cfunk/weddingshred" value="38E2MoWMNg67lLbeoadoWFL8Z1o" />
+    </persistenceIdMap>
   </component>
   <component name="Git.Settings">
     <option name="PATH_TO_GIT" value="C:\Users\christopher.funk\AppData\Local\Programs\Git\cmd\git.exe" />
@@ -55,7 +89,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1768593526805",
+    "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1769094236328",
     "credentialsType org.jetbrains.plugins.ruby.remote.impl.RubyCreateRemoteInterpreterDialog$RubyCreateRemoteSdkForm": "WSL",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "//wsl.localhost/Ubuntu/home/cfunk/weddingshred/app/javascript",
@@ -84,11 +118,11 @@
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts\gymove\plugins" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\controllers" />
+      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\controllers\admin" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\views\admin\users" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\javascripts\plugins" />
       <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\javascript" />
-      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\views\shared" />
-      <recent name="\\wsl.localhost\Ubuntu\home\cfunk\weddingshred\app\assets\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -169,7 +203,8 @@
       <workItem from="1768450772800" duration="789000" />
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
-      <workItem from="1768593464634" duration="54307000" />
+      <workItem from="1768593464634" duration="55070000" />
+      <workItem from="1769094173880" duration="13302000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -267,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768965006208</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Created the basics for group admin">
+      <option name="closed" value="true" />
+      <created>1768970557211</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1768970557211</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +329,8 @@
     <MESSAGE value="updates for users" />
     <MESSAGE value="Added admin user pages" />
     <MESSAGE value="Update for wedding groups and admin management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update for wedding groups and admin management" />
+    <MESSAGE value="Created the basics for group admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the basics for group admin" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

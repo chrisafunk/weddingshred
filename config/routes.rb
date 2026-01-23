@@ -4,17 +4,22 @@ Rails.application.routes.draw do
   get "leaderboard/index"
   devise_for :users
 
+  root "dashboard#index"
+
   namespace :admin do
-    get "month_plan_leaderboards/show"
-    resources :exercises
+    get '/', to: 'index'
 
+    resources :users, only: [:index, :edit, :update, :new, :create]
 
-    resources :month_plans do
-      member { get :duplicate } # optional from earlier UX niceties
+    resources :wedding_groups do
+      member do
+        get :add_member
+        post :set_member
+        post :remove_member
+        post :create_member
+        post :toggle_admin, to: 'wedding_groups#toggle_admin', as: :toggle_admin
+      end
     end
-
-    get :leaderboard # /admin/month_plans/:id/leaderboard
-
   end
 
 
@@ -23,9 +28,6 @@ Rails.application.routes.draw do
 
   # Leaderboard with tabbed views: ?view=monthly or ?view=all_time
   get "leaderboard", to: "leaderboard#index"
-
-
-  root "dashboard#index"
 
 
   resources :month_plans, only: [] do
@@ -39,19 +41,6 @@ Rails.application.routes.draw do
 
   resource :profile, only: [:edit, :update]
 
-  get 'admin', to: 'admin#index'
-  namespace :admin do
-    resources :users, only: [:index, :edit, :update]
-    resources :wedding_groups do
-      member do
-        get :add_member
-        post :set_member   # This creates the POST route with the same name
-        post :remove_member
-        post :create_member
-      end
-    end
-    resources :users
-  end
 
   get "group_admin_dashboard", to: "group_admin_dashboard#index", as: :group_admin_dashboard
 

@@ -2,15 +2,13 @@
   Admin Dashboard
 <% end %>
 
-<% content_for :card_title do %>
-  Actions
-<% end %>
+
 <div class="content-body default-height">
   <div class="container-fluid">
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <%= render layout: "layouts/card_wrapper" do %>
+        <%= render layout: "layouts/card_wrapper", locals: { card_title: "Actions" } do %>
           <!-- Your page content here (form, etc.) -->
           <%= link_to "Manage Users", admin_users_path, class: "btn btn-info mb-3 mr-2" %>
           <%= link_to "Manage Wedding Groups", admin_wedding_groups_path, class: "btn btn-success mb-3" %>

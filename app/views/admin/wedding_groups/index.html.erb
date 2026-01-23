@@ -10,7 +10,7 @@ Admin Dashboard
     <!-- row -->
     <div class="row">
       <div class="col-xl-12 col-xxl-12">
-        <%= render layout: "layouts/card_wrapper" do %>
+        <%= render layout: "layouts/card_wrapper", locals: { card_title: "Wedding Groups" } do %>
           <!-- Your page content here (form, etc.) -->
 
             <table class="table">
@@ -19,9 +19,8 @@ Admin Dashboard
                 <th>Name</th>
                 <th>Wedding Date</th>
                 <th>Location</th>
-                <th>Members</th>
-                <th>Admins</th>
-                <th>Pending Members</th>
+                <th>Members/Pending</th>
+                <th>Group Admins</th>
                 <th>Actions</th>
               </tr>
               </thead>
@@ -31,29 +30,28 @@ Admin Dashboard
                   <td><%= group.name %></td>
                   <td><%= wedding_date_with_countdown(group.wedding_date) %></td>
                   <td><%= group.location %></td>
-                  <td>
-                    <%= group.memberships.joins(:user).where(users: { role: "member" }).count %>
+                  <td class="text-center">
+                    <%= group.memberships.joins(:user).where(users: { role: "member" }).count %> /  <%= group.memberships.joins(:user).where(users: { role: "member" }, status: "pending").count %>
+                  </td>
+                  <td class="text-center">
+                    <%= group.memberships.where(is_group_admin: true).count %>
                   </td>
                   <td>
-                    <%= group.memberships.joins(:user).where(users: { role: ["group_admin_dashboard", "super_admin"] }).count %>
-                  </td>
-                  <td>
-                    <%= group.memberships.joins(:user).where(users: { role: "member" }, status: "pending").count %>
-                  </td>
-                  <td>
-                    <%= link_to "Add Member", add_member_admin_wedding_group_path(group), class: "btn btn-sm btn-secondary" %>
+                    <%= link_to "Members", add_member_admin_wedding_group_path(group), class: "btn btn-sm btn-secondary" %>
                     <%= link_to "Edit", edit_admin_wedding_group_path(group), class: "btn btn-sm btn-primary" %>
                   </td>
                 </tr>
               <% end %>
               </tbody>
             </table>
-
           <div class="d-flex gap-2 mt-3 mb-3">
-            <%= link_to "Cancel", admin_path, class: "btn btn-secondary" %>
-            <%= link_to "Create New Wedding Group", new_admin_wedding_group_path, class: "btn btn-success" %>
+           <%= link_to "Create New Wedding Group", new_admin_wedding_group_path, class: "btn btn-success" %>
           </div>
         <% end %>
+        <div class="d-flex gap-2 mt-3 mb-3">
+          <%= link_to "Cancel", admin_path, class: "btn btn-secondary" %>
+        </div>
+
       </div>
     </div>
   </div>

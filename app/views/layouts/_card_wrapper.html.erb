@@ -1,11 +1,10 @@
-<div class="card">
+<div class="card" style="height: auto; min-height: 0;">
   <div class="card-header">
     <div class="card-title d-flex justify-content-between align-items-center w-100">
-      <%= yield(:card_title) %>
+      <%= local_assigns[:card_title] || "" %>
     </div>
   </div>
-  <div class="card-body">
-      <%= yield %>
+  <div class="card-body" style="height: auto; min-height: 0;">
+    <%= yield %>
   </div>
 </div>
-
