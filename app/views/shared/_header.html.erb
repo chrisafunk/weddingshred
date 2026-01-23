@@ -9,16 +9,26 @@
         </div>
         <ul class="navbar-nav header-right">
           <li class="nav-item">
-            <form>
-              <div class="input-group search-area d-lg-inline-flex d-none me-3">
-									  <span class="input-group-text" id="header-search">
-											<button class="bg-transparent border-0" type="button" aria-label="header-search">
-												<i class="flaticon-381-search-2"></i>
-											</button>
-									  </span>
-                <input type="text" class="form-control" placeholder="Search here" aria-label="Username" aria-describedby="header-search">
+            <%= form_with url: set_current_group_path, method: :post, local: true, class: "me-3" do %>
+              <div class="input-group d-lg-inline-flex d-none">
+                <%= select_tag :group_id,
+                               options_for_select(
+                                 @wedding_groups.map { |group|
+                                   name = group.name
+                                   if group.memberships.find_by(user_id: current_user.id)&.is_group_admin?
+                                     name += " (Group Admin)"
+                                   end
+                                   [name, group.id]
+                                 },
+                                 session[:current_group_id]
+                               ),
+                               class: "form-select form-select-lg h-100 align-self-center",
+                               onchange: "this.form.submit();" %>
+
+
               </div>
-            </form>
+            <% end %>
+
           </li>
           <li class="nav-item dropdown notification_dropdown">
             <a class="nav-link bell dz-theme-mode" href="javascript:void(0);" aria-label="theme-mode">

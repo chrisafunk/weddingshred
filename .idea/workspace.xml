@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="fixed toast messages">
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Moved the group admin to the main dashboard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/wedding_groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/wedding_groups_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/wedding_groups/add_member.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/add_member.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb.legacy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/leaderboard_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/month_plans_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/workout_entries_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/leaderboard_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/workout_entries_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/exercise.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/month_plan.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/plan_exercise.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/wedding_group.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/wedding_group.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/workout_entry.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/leaderboard_query.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/leaderboard/_table_all_time.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/leaderboard/_table_monthly.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/leaderboard/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/workout_entries/_form.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/workout_entries/edit.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/workout_entries/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/workout_entries/new.html.erb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +187,7 @@
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
       <workItem from="1768593464634" duration="55070000" />
-      <workItem from="1769094173880" duration="19198000" />
+      <workItem from="1769094173880" duration="22179000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -302,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769131189140</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Moved the group admin to the main dashboard">
+      <option name="closed" value="true" />
+      <created>1769144126428</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1769144126428</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +348,8 @@
     <MESSAGE value="Updated for the delete modal and changes to allow users to be group admins for differnt groups" />
     <MESSAGE value="added a way for users to register" />
     <MESSAGE value="fixed toast messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed toast messages" />
+    <MESSAGE value="Moved the group admin to the main dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved the group admin to the main dashboard" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

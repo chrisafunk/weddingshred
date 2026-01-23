@@ -10,11 +10,11 @@ Rails.application.routes.draw do
 
   root "dashboard#index"
 
+  post 'set_current_group', to: 'application#set_current_group', as: :set_current_group
+
   namespace :admin do
     get '/', to: 'index'
-
     resources :users, only: [:index, :edit, :update, :new, :create, :destroy]
-
     resources :wedding_groups do
       member do
         get :add_member
@@ -26,19 +26,6 @@ Rails.application.routes.draw do
     end
   end
 
-
-  resources :workout_entries
-
-
-  # Leaderboard with tabbed views: ?view=monthly or ?view=all_time
-  get "leaderboard", to: "leaderboard#index"
-
-
-  resources :month_plans, only: [] do
-    member do
-      get :exercises, to: "month_plans#exercises"
-    end
-  end
 
   # suppress Chrome DevTools "This site uses an app-specific manifest" warning
   get '/.well-known/appspecific/com.chrome.devtools.json', to: proc { [204, {}, ['']] }
