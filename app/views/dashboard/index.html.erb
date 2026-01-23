@@ -14,17 +14,13 @@
         <div class="col-xl-6 col-xxl-12">
           <div class="row">
 
-            <% if @is_group_admin && @admin_groups.present? %>
+            <% if @current_group.memberships.find_by(user_id: current_user.id)&.is_group_admin? %>
               <div class="card mb-4">
                 <div class="card-header">
-                  <h4 class="text-black fs-20">Groups You Admin</h4>
+                  <h4 class="text-black fs-20">Groups Admin Controls</h4>
                 </div>
                 <div class="card-body">
-                  <ul>
-                    <% @admin_groups.each do |group| %>
-                      <li><%= group.name %></li>
-                    <% end %>
-                  </ul>
+
                 </div>
               </div>
             <% end %>

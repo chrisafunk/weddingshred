@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="removed unused code and also added the wedding group selector">
-      <change beforePath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/users/index.html.erb" afterDir="false" />
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Updates to help admins find membership owners">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +168,7 @@
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
       <workItem from="1768593464634" duration="55070000" />
-      <workItem from="1769094173880" duration="22504000" />
+      <workItem from="1769094173880" duration="23528000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -312,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769178706945</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Updates to help admins find membership owners">
+      <option name="closed" value="true" />
+      <created>1769179226148</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1769179226148</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +347,8 @@
     <MESSAGE value="fixed toast messages" />
     <MESSAGE value="Moved the group admin to the main dashboard" />
     <MESSAGE value="removed unused code and also added the wedding group selector" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed unused code and also added the wedding group selector" />
+    <MESSAGE value="Updates to help admins find membership owners" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to help admins find membership owners" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
