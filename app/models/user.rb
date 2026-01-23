@@ -3,6 +3,9 @@ class User < ApplicationRecord
 
   validates :password, length: { minimum: 7 }, allow_blank: true
   validates :password, confirmation: true, allow_blank: true
+  validates :first_name, :last_name, :relationship_to_couple, :email, :password, presence: true
+
+
 
   # Devise modules—adjust to your preference
   devise :database_authenticatable, :registerable,

@@ -41,7 +41,7 @@
       Preloader end
   ********************-->
 
-  <% unless controller_name == "sessions" && action_name == "new" %>
+  <% unless devise_controller? %>
 
   <!--**********************************
       Main wrapper start
@@ -84,7 +84,7 @@
        Flash Messages start
      ***********************************-->
     <% flash.each do |key, message| %>
-      <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+      <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 1100;">
         <div class="toast show align-items-center text-bg-<%= key == "error" ? "danger" : key == "notice" ? "success" : "info" %> border-0" role="alert" aria-live="assertive" aria-atomic="true">
           <div class="d-flex">
             <div class="toast-body">
@@ -95,6 +95,7 @@
         </div>
       </div>
     <% end %>
+
     <!--**********************************
           Flash Messages end
       ***********************************-->
@@ -147,24 +148,7 @@
 
   <% else %>
 
-    <!--**********************************
-         Flash Messages start
-     ***********************************-->
-    <% flash.each do |key, message| %>
-      <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
-        <div class="toast show align-items-center text-bg-<%= key == "error" ? "danger" : key == "notice" ? "success" : "info" %> border-0" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="d-flex">
-            <div class="toast-body">
-              <%= message %>
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-          </div>
-        </div>
-      </div>
-    <% end %>
-    <!--**********************************
-          Flash Messages end
-      ***********************************-->
+
 
     <!--**********************************
         Devise Login and Registration start
@@ -179,12 +163,12 @@
 
   <!-- Core Plugins -->
 
-  <%= javascript_include_tag "jquery.min" %>
-  <%= javascript_include_tag "bootstrap.bundle.min" %>
-  <%= javascript_include_tag "settings" %>
-  <%= javascript_include_tag "deznav-init" %>
-  <%= javascript_include_tag "metisMenu.min" %>
-  <%= javascript_include_tag "custom" %>
+  <%= javascript_include_tag "jquery.min", crossorigin: "anonymous" %>
+  <%= javascript_include_tag "bootstrap.bundle.min", crossorigin: "anonymous" %>
+  <%= javascript_include_tag "settings", crossorigin: "anonymous" %>
+  <%= javascript_include_tag "deznav-init", crossorigin: "anonymous" %>
+  <%= javascript_include_tag "metisMenu.min", crossorigin: "anonymous" %>
+  <%= javascript_include_tag "custom", crossorigin: "anonymous" %>
 
 
   <%= yield :page_scripts %>

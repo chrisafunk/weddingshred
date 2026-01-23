@@ -1,8 +1,11 @@
 
 # config/routes.rb
 Rails.application.routes.draw do
-  get "leaderboard/index"
-  devise_for :users
+
+
+  devise_for :users, controllers: {
+    sessions: 'users/sessions'
+  }
 
   root "dashboard#index"
 
