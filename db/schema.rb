@@ -10,16 +10,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_01_22_191137) do
+ActiveRecord::Schema[8.1].define(version: 2026_01_23_180505) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
   create_table "exercises", force: :cascade do |t|
     t.string "category"
+    t.text "coaching_cues"
+    t.text "contraindications"
     t.datetime "created_at", null: false
+    t.text "description"
+    t.string "equipment", default: [], array: true
+    t.integer "exercise_type", default: 0, null: false
+    t.jsonb "joint_angles", default: {}
+    t.integer "movement_pattern", default: 0, null: false
     t.string "name"
+    t.integer "plane_of_motion", default: 0, null: false
+    t.string "primary_muscles", default: [], array: true
+    t.string "purposes", default: [], array: true
+    t.text "range_of_motion"
+    t.boolean "requires_spotter", default: false, null: false
+    t.string "secondary_muscles", default: [], array: true
+    t.integer "starting_position", default: 0, null: false
+    t.integer "technical_complexity", default: 0, null: false
+    t.string "thumbnail_url"
+    t.boolean "unilateral", default: false, null: false
     t.string "unit"
     t.datetime "updated_at", null: false
+    t.string "video_url"
+    t.index ["equipment"], name: "index_exercises_on_equipment", using: :gin
+    t.index ["joint_angles"], name: "index_exercises_on_joint_angles", using: :gin
+    t.index ["primary_muscles"], name: "index_exercises_on_primary_muscles", using: :gin
+    t.index ["purposes"], name: "index_exercises_on_purposes", using: :gin
+    t.index ["secondary_muscles"], name: "index_exercises_on_secondary_muscles", using: :gin
+    t.index ["thumbnail_url"], name: "index_exercises_on_thumbnail_url"
   end
 
   create_table "memberships", force: :cascade do |t|
@@ -31,26 +55,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_22_191137) do
     t.bigint "wedding_group_id", null: false
     t.index ["user_id"], name: "index_memberships_on_user_id"
     t.index ["wedding_group_id"], name: "index_memberships_on_wedding_group_id"
-  end
-
-  create_table "month_plans", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.date "end_date"
-    t.date "start_date"
-    t.string "title"
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "plan_exercises", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.bigint "exercise_id", null: false
-    t.bigint "month_plan_id", null: false
-    t.integer "target_reps"
-    t.integer "target_sets"
-    t.decimal "target_weight"
-    t.datetime "updated_at", null: false
-    t.index ["exercise_id"], name: "index_plan_exercises_on_exercise_id"
-    t.index ["month_plan_id"], name: "index_plan_exercises_on_month_plan_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -85,31 +89,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_22_191137) do
     t.date "wedding_date"
   end
 
-  create_table "workout_entries", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.decimal "distance_km"
-    t.integer "duration_minutes"
-    t.bigint "exercise_id", null: false
-    t.bigint "month_plan_id", null: false
-    t.text "notes"
-    t.date "performed_on"
-    t.integer "reps"
-    t.integer "sets"
-    t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.decimal "weight"
-    t.index ["exercise_id"], name: "index_workout_entries_on_exercise_id"
-    t.index ["month_plan_id"], name: "index_workout_entries_on_month_plan_id"
-    t.index ["performed_on"], name: "index_workout_entries_on_performed_on"
-    t.index ["user_id", "month_plan_id", "performed_on"], name: "index_entries_user_plan_day"
-    t.index ["user_id"], name: "index_workout_entries_on_user_id"
-  end
-
   add_foreign_key "memberships", "users"
   add_foreign_key "memberships", "wedding_groups"
-  add_foreign_key "plan_exercises", "exercises"
-  add_foreign_key "plan_exercises", "month_plans"
-  add_foreign_key "workout_entries", "exercises"
-  add_foreign_key "workout_entries", "month_plans"
-  add_foreign_key "workout_entries", "users"
 end

@@ -1,21 +1,20 @@
 
-# db/seeds.rb (append)
+# db/seeds.rb
+# Fresh loader:
+# - Purges Exercise
+# - Resets PK sequence (when supported)
+# - Loads the exercises seed file
 
+puts "[seeds] Purging exercises…"
+Exercise.delete_all
 
-WeddingGroup.create!([
-                       {
-                         name: "Smith-Jones Wedding",
-                         wedding_date: Date.new(2024, 9, 14),
-                         location: "Central Park, New York"
-                       },
-                       {
-                         name: "Lee-Chen Celebration",
-                         wedding_date: Date.new(2024, 10, 21),
-                         location: "Golden Gate Park, San Francisco"
-                       },
-                       {
-                         name: "Patel-Garcia Union",
-                         wedding_date: Date.new(2025, 5, 3),
-                         location: "Hyde Park, London"
-                       }
-                     ])
+if ActiveRecord::Base.connection.respond_to?(:reset_pk_sequence!)
+  ActiveRecord::Base.connection.reset_pk_sequence!("exercises")
+elsif ApplicationRecord.connection.respond_to?(:reset_pk_sequence!)
+  ApplicationRecord.connection.reset_pk_sequence!("exercises")
+end
+
+puts "[seeds] Loading exercise seeds…"
+require_relative "seeds/exercises.seeds"
+
+puts "[seeds] Done."

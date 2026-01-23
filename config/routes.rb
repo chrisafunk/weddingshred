@@ -32,7 +32,7 @@ Rails.application.routes.draw do
 
   resource :profile, only: [:edit, :update]
 
-
+  resources :exercises
 
 
 end

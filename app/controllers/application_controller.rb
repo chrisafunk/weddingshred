@@ -3,13 +3,16 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :set_wedding_groups
 
+  skip_before_action :set_wedding_groups, if: :devise_controller?
+
   def set_wedding_groups
     @wedding_groups = current_user.memberships
                                   .includes(:wedding_group)
                                   .where.not(status: "pending")
+                                  .order('wedding_groups.name ASC')
                                   .map(&:wedding_group)
 
-    if @wedding_groups.size == 1
+    if @wedding_groups.any? && session[:current_group_id].blank?
       session[:current_group_id] = @wedding_groups.first.id
     end
   end
