@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Updates to help admins find membership owners">
-      <change afterPath="$PROJECT_DIR$/app/controllers/exercises_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/exercises_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/exercise.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/exercises/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/exercises/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/exercises/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/exercises/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/seeds/exercises.seeds.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/seeds/wedding_group.seeds.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/tasks/media_check.rake" afterDir="false" />
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Added Exersises">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/exercises/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/exercises/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/exercises/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/exercises/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +168,7 @@
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
       <workItem from="1768593464634" duration="55070000" />
-      <workItem from="1769094173880" duration="40120000" />
+      <workItem from="1769094173880" duration="41615000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -343,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769180152814</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added Exersises">
+      <option name="closed" value="true" />
+      <created>1769200220185</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1769200220185</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +364,8 @@
     <MESSAGE value="Moved the group admin to the main dashboard" />
     <MESSAGE value="removed unused code and also added the wedding group selector" />
     <MESSAGE value="Updates to help admins find membership owners" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updates to help admins find membership owners" />
+    <MESSAGE value="Added Exersises" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Exersises" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

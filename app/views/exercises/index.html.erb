@@ -43,9 +43,8 @@
 
                               <% @exercises.each do |ex| %>
                                 <div class="media border-bottom mb-3 pb-3 d-lg-flex d-block menu-list">
-                                  <a href="ecom-product-detail.html">
-                                    <%= exercise_thumb(ex, width: 150, height: 120, class_name: 'rounded me-3 mb-md-0 mb-3') %>
-                                  </a>
+                                  <%= link_to exercise_thumb(ex, width: 150, height: 120, class_name: 'rounded me-3 mb-md-0 mb-3'), ex %>
+
                                   <div class="food-default-flex col-lg-8 ps-0">
                                     <h6 class="fs-16 font-w600"><a href="ecom-product-detail.html" class="text-black"><%= link_to ex.name, ex %></a></h6>
                                     <p class="fs-14"><%= link_to ex.description, ex %></p>
@@ -58,13 +57,15 @@
                                           <span class="fs-14 text-black text-nowrap font-w500"><%= ex.equipment.map(&:humanize).join(', ') %></span>
                                         </li>
                                         <li class="mb-2 me-4 text-nowrap"><i class="las la-male scale5 me-2"></i><span class="text-nowrap fs-14 text-black font-w500"> <%= ex.primary_muscles.map(&:humanize).join(', ') %></span></li>
-                                        <% color_class = case ex.technical_complexity
-                                                         when "high" then "text-danger"
-                                                         when "medium" then "text-warning"
-                                                         else "text-success"
-                                                         end %>
-                                        <li class="text-nowrap mb-2"><i class="las la-fist-raised me-2 scale3 <%= color_class %>" aria-hidden="true"></i><span class="text-nowrap fs-14 text-black font-w500"><%= ex.technical_complexity.humanize %></span></li>
-                                      </ul>
+                                     </ul>
+                                      <% badge_class, badge_label = case ex.technical_complexity
+                                                                    when "high" then ["badge-danger", "High"]
+                                                                    when "medium" then ["badge-warning", "Medium"]
+                                                                    else ["badge-success", "Low"]
+                                                                    end %>
+                                      <span class="badge <%= badge_class %> light mb-1 mb-sm-0"><%= badge_label %>-Complexity</span>
+
+
                                     </div>
                                   </div>
                                   <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#aAddDietMenus" class="btn btn-primary light btn-md ms-auto"><i class="fa fa-plus scale5 me-3"></i> To Workout</a>
