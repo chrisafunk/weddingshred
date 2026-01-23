@@ -23,6 +23,18 @@ var Gymove = function(){
     });
 
 
+    // app/assets/javascripts/toast_auto_hide.js
+    document.addEventListener('DOMContentLoaded', function() {
+        const toasts = document.querySelectorAll('.toast');
+        toasts.forEach(function(toast) {
+            setTimeout(function() {
+                toast.style.display = 'none';
+            }, 4000); // 4000ms = 4 seconds
+        });
+    });
+
+
+
     /* Search Bar ============ */
 	var screenWidth = $( window ).width();
 	
