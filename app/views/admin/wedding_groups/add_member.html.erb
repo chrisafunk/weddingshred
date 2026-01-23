@@ -28,7 +28,7 @@
             </thead>
             <tbody>
             <% @group_members.each do |user| %>
-              <% next if user.role == 'super_admin' %>
+
               <% membership = @wedding_group.memberships.find { |m| m.user_id == user.id } %>
               <tr >
                 <td><%= user.last_name %>, <%= user.first_name %></td>
@@ -80,7 +80,7 @@
             </thead>
             <tbody>
             <% @non_members.each do |user| %>
-              <% next if user.role == 'super_admin' %>
+
               <% membership = @wedding_group.memberships.find { |m| m.user_id == user.id } %>
               <tr>
                 <td><%= user.last_name %>, <%= user.first_name %></td>

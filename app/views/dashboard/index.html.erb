@@ -13,6 +13,22 @@
       <div class="row">
         <div class="col-xl-6 col-xxl-12">
           <div class="row">
+
+            <% if @is_group_admin && @admin_groups.present? %>
+              <div class="card mb-4">
+                <div class="card-header">
+                  <h4 class="text-black fs-20">Groups You Admin</h4>
+                </div>
+                <div class="card-body">
+                  <ul>
+                    <% @admin_groups.each do |group| %>
+                      <li><%= group.name %></li>
+                    <% end %>
+                  </ul>
+                </div>
+              </div>
+            <% end %>
+
             <div class="col-sm-6">
               <div class="card avtivity-card">
                 <div class="card-body">

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="added a way for users to register">
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="fixed toast messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/wedding_groups_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/wedding_groups_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/wedding_groups/add_member.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/wedding_groups/add_member.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/dashboard/index.html.erb.legacy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +172,7 @@
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
       <workItem from="1768593464634" duration="55070000" />
-      <workItem from="1769094173880" duration="16995000" />
+      <workItem from="1769094173880" duration="19198000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -290,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769130703890</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed toast messages">
+      <option name="closed" value="true" />
+      <created>1769131189140</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1769131189140</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +324,8 @@
     <MESSAGE value="Created the basics for group admin" />
     <MESSAGE value="Updated for the delete modal and changes to allow users to be group admins for differnt groups" />
     <MESSAGE value="added a way for users to register" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a way for users to register" />
+    <MESSAGE value="fixed toast messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed toast messages" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

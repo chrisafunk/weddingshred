@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   namespace :admin do
     get '/', to: 'index'
 
-    resources :users, only: [:index, :edit, :update, :new, :create]
+    resources :users, only: [:index, :edit, :update, :new, :create, :destroy]
 
     resources :wedding_groups do
       member do
@@ -45,13 +45,6 @@ Rails.application.routes.draw do
 
   resource :profile, only: [:edit, :update]
 
-
-  get "group_admin_dashboard", to: "group_admin_dashboard#index", as: :group_admin_dashboard
-
-  get "group_admin_memberships", to: "group_admin_memberships#index", as: :group_admin_memberships
-  post "group_admin_memberships/:id/join", to: "group_admin_memberships#join", as: :join_group_admin_membership
-  post "group_admin_memberships/:id/unjoin", to: "group_admin_memberships#unjoin", as: :unjoin_group_admin_membership
-  patch "group_admin_memberships/:id/update_role", to: "group_admin_memberships#update_role", as: :update_role_group_admin_membership
 
 
 

@@ -1,8 +1,7 @@
 
 class DashboardController < ApplicationController
   def index
-    @month_plan = MonthPlan.current.first
-    @today_entries = current_user.workout_entries.where(performed_on: Date.current)
-                                 .includes(:exercise).order("exercises.name")
+    @is_group_admin = current_user.memberships.any?(&:is_group_admin?)
+    @admin_groups = current_user.memberships.select(&:is_group_admin?).map(&:wedding_group) if @is_group_admin
   end
 end

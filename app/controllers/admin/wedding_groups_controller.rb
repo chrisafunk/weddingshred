@@ -58,7 +58,7 @@ class Admin::WeddingGroupsController < ApplicationController
 
   def add_member
     @wedding_group = WeddingGroup.find(params[:id])
-    all_users = User.where.not(role: 'super_admin').order(:last_name)
+    all_users = User.order(:last_name)
     member_ids = @wedding_group.memberships.pluck(:user_id)
     @group_members = all_users.where(id: member_ids)
     @non_members = all_users.where.not(id: member_ids)
