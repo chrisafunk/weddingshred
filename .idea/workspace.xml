@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="Added the exersise show page">
+    <list default="true" id="56cde377-3e5f-46ec-8c65-788117a80020" name="Changes" comment="added workouts to the side">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/exercises/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/exercises/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/exercises/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/exercises/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +168,7 @@
       <workItem from="1768451590137" duration="375000" />
       <workItem from="1768451992092" duration="43129000" />
       <workItem from="1768593464634" duration="55070000" />
-      <workItem from="1769094173880" duration="41883000" />
+      <workItem from="1769094173880" duration="45792000" />
     </task>
     <task id="LOCAL-00001" summary="Remove all old themes">
       <option name="closed" value="true" />
@@ -345,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769201587507</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added workouts to the side">
+      <option name="closed" value="true" />
+      <created>1769201940179</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1769201940179</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +382,8 @@
     <MESSAGE value="Updates to help admins find membership owners" />
     <MESSAGE value="Added Exersises" />
     <MESSAGE value="Added the exersise show page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the exersise show page" />
+    <MESSAGE value="added workouts to the side" />
+    <option name="LAST_COMMIT_MESSAGE" value="added workouts to the side" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

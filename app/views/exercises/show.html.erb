@@ -10,104 +10,152 @@
       </ol>
     </div>
     <div class="row">
-      <div class="col-lg-12">
+      <!-- Left column -->
+      <div class="col-12 col-lg-7">
         <div class="card">
           <div class="card-body">
-            <div class="row">
-              <div class="col-xl-3 col-lg-6  col-md-6 col-xxl-5 ">
-                <!-- Tab panes -->
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                    <%= link_to @exercise.video_url, target: "_blank" do %>
-                      <img class="img-fluid rounded" src="<%= @exercise.thumbnail_url %>" alt="<%= @exercise.name %>">
-                    <% end %>
-                  </div>
-                </div>
 
-              </div>
-              <!--Tab slider End-->
-              <div class="col-xl-9 col-lg-6  col-md-6 col-xxl-7 col-sm-12">
-                <div class="product-detail-content">
-                  <!--Product details-->
-                  <div class="new-arrival-content mt-md-0 mt-3 pr">
-                    <h4><%= @exercise.name %></h4>
-
-                    <div class="d-table mb-2">
-                      <p class="price float-start d-block">$325.00</p>
-                    </div>
-                    <p class="text-black">Availability: <span class="item"> In stock <i class="fa fa-shopping-basket"></i></span>
-                    </p>
-                    <p class="text-black">Product code: <span class="item">0405689</span> </p>
-                    <p class="text-black">Brand: <span class="item">Lee</span></p>
-                    <p class="text-black">Technical Complexity:&nbsp;&nbsp;
-                      <span class="badge badge-success light mb-1 mb-sm-0">Low</span>
-                      <span class="badge badge-danger light mb-1 mb-sm-0">High</span>
-                      <span class="badge badge-warning light">Medium</span>
-                      <span class="badge badge-info light">Unknown</span>
-                    </p>
-                    <p class="text-content"><%= @exercise.description %></p>
-                    <div class="d-flex align-items-end flex-wrap mt-4">
-
-                      <!--Quanatity End-->
-                      <div class="shopping-cart  me-3">
-                        <a class="btn btn-primary" href="javascript:void();"><i class="fa fa-shopping-basket me-2"></i>
-                          Add to Workout
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="d-flex align-items-start justify-content-between mb-3">
+              <div>
+                <h1 class="h3 mb-1">Assisted Chin‑Up Machine</h1>
+                <p class="text-muted mb-2">Scalable vertical pull to bridge toward unassisted reps.</p>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="badge rounded-pill text-bg-primary">Upper Body</span>
+                  <span class="badge rounded-pill text-bg-info">Pull</span>
+                  <span class="badge rounded-pill text-bg-success">Stability</span>
+                  <span class="badge rounded-pill text-bg-secondary">Low Complexity</span>
                 </div>
               </div>
+              <span class="badge text-bg-dark text-mono">ID: 30</span>
             </div>
 
-          </div>
+            <div class="mb-3">
+              <div class="section-heading">Video</div>
+              <a class="thumb-overlay" href="https://www.exerciselibrary.com/exercise/assisted-chin-up-machine/" target="_blank" rel="noopener">
+                <img src="https://placehold.co/640x360.jpg?text=Assisted%20Chin%E2%80%91Up%20Machine" alt="Assisted Chin‑Up Machine thumbnail">
+                <div class="play">
+                  <span class="btn btn-light btn-lg rounded-circle px-3 py-2" aria-label="Play video">▶</span>
+                </div>
+              </a>
+            </div>
 
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0 d-flex">
+                <span class="kv-label me-3">Unit</span>
+                <span class="text-mono">reps</span>
+              </li>
+              <li class="list-group-item px-0 d-flex">
+                <span class="kv-label me-3">Starting Position</span>
+                <span>kneeling</span>
+              </li>
+              <li class="list-group-item px-0 d-flex">
+                <span class="kv-label me-3">Plane of Motion</span>
+                <span>frontal</span>
+              </li>
+              <li class="list-group-item px-0 d-flex">
+                <span class="kv-label me-3">Equipment</span>
+                <span>machine</span>
+              </li>
+              <li class="list-group-item px-0 d-flex">
+                <span class="kv-label me-3">Range of Motion</span>
+                <span>Full hang to chin‑over‑bar; controlled return.</span>
+              </li>
+              <li class="list-group-item px-0 d-flex">
+                <span class="kv-label me-3">Coaching Cues</span>
+                <span>Don’t jerk; set shoulders first.</span>
+              </li>
+              <li class="list-group-item px-0 d-flex">
+                <span class="kv-label me-3">Contraindications</span>
+                <span class="text-muted fst-italic">None listed</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-footer d-flex flex-wrap gap-3 small text-muted">
+            <span><strong>Created:</strong> 2026-01-23 14:52:46 -0500</span>
+            <span><strong>Updated:</strong> 2026-01-23 14:52:46 -0500</span>
+          </div>
         </div>
       </div>
-      <!-- review -->
-      <div class="modal fade" id="reviewModal">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Review</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal">
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="text-center mb-4">
-                  <img class="img-fluid rounded" width="78" src="images/avatar/1.jpg" alt="DexignZone">
+
+      <!-- Right column: Details -->
+      <div class="col-12 col-lg-5">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+              <div class="col-12 col-md-6">
+                <div class="section-heading">Classification</div>
+                <div class="d-flex align-items-center gap-2 flex-wrap mb-2">
+                  <span class="badge text-bg-light border">Category: <strong class="ms-1">upper_body</strong></span>
+                  <span class="badge text-bg-light border">Pattern: <strong class="ms-1">pull</strong></span>
+                  <span class="badge text-bg-light border">Type: <strong class="ms-1">stability</strong></span>
                 </div>
-                <div class="form-group">
-                  <div class="rating-widget mb-4 text-center">
-                    <!-- Rating Stars Box -->
-                    <div class="rating-stars">
-                      <ul id="stars">
-                        <li class="star" title="Poor" data-value="1">
-                          <i class="fa fa-star fa-fw"></i>
-                        </li>
-                        <li class="star" title="Fair" data-value="2">
-                          <i class="fa fa-star fa-fw"></i>
-                        </li>
-                        <li class="star" title="Good" data-value="3">
-                          <i class="fa fa-star fa-fw"></i>
-                        </li>
-                        <li class="star" title="Excellent" data-value="4">
-                          <i class="fa fa-star fa-fw"></i>
-                        </li>
-                        <li class="star" title="WOW!!!" data-value="5">
-                          <i class="fa fa-star fa-fw"></i>
-                        </li>
-                      </ul>
-                    </div>
+                <div class="d-flex align-items-center gap-2 flex-wrap">
+                  <span class="badge text-bg-light border">Unilateral: <strong class="ms-1">false</strong></span>
+                  <span class="badge text-bg-light border">Spotter Required: <strong class="ms-1">false</strong></span>
+                  <span class="badge text-bg-light border">Complexity: <strong class="ms-1">low</strong></span>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="section-heading">Muscles</div>
+                <div class="mb-2">
+                  <div class="small text-muted">Primary</div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill text-bg-primary">lats</span>
+                    <span class="badge rounded-pill text-bg-primary">biceps</span>
                   </div>
                 </div>
-                <div class="form-group">
-                  <textarea class="form-control" placeholder="Comment" rows="5"></textarea>
+                <div>
+                  <div class="small text-muted">Secondary</div>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill text-bg-secondary">upper_back</span>
+                    <span class="badge rounded-pill text-bg-secondary">core</span>
+                  </div>
                 </div>
-                <button class="btn btn-success btn-block">RATE</button>
-              </form>
-            </div>
+              </div>
+
+              <div class="col-12">
+                <div class="section-heading">Purposes</div>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                  <span class="badge text-bg-success">stability</span>
+                  <span class="badge text-bg-success">technique</span>
+                </div>
+              </div>
+
+
+              <div class="col-12">
+                <div class="section-heading">Technical Notes</div>
+                <div class="table-responsive">
+                  <table class="table table-sm align-middle">
+                    <tbody>
+                    <tr>
+                      <th class="text-muted fw-normal" style="width: 14rem;">Movement Pattern</th>
+                      <td>pull</td>
+                    </tr>
+                    <tr>
+                      <th class="text-muted fw-normal">Exercise Type</th>
+                      <td>stability</td>
+                    </tr>
+                    <tr>
+                      <th class="text-muted fw-normal">Plane of Motion</th>
+                      <td>frontal</td>
+                    </tr>
+                    <tr>
+                      <th class="text-muted fw-normal">Joint Angles</th>
+                      <td class="text-muted fst-italic">{}</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="alert alert-info d-flex align-items-start gap-2 mb-0">
+                  <div class="pt-1">ℹ️</div>
+                  <div>
+                    <strong>Setup Tip:</strong> Begin from a <em>full hang</em>, depress and set the shoulders first, then pull smoothly—avoid jerking. Control the return to full elbow extension.
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
